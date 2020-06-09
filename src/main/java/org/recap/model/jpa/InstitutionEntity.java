@@ -1,5 +1,8 @@
 package org.recap.model.jpa;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -9,6 +12,8 @@ import java.io.Serializable;
 @Entity
 @Table(name = "institution_t", schema = "recap", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "INSTITUTION_ID"))
+@Getter
+@Setter
 public class InstitutionEntity extends AbstractEntity<Integer> {
 
     @Column(name = "INSTITUTION_CODE")
@@ -17,39 +22,4 @@ public class InstitutionEntity extends AbstractEntity<Integer> {
     @Column(name = "INSTITUTION_NAME")
     private String institutionName;
 
-    /**
-     * Gets institution code.
-     *
-     * @return the institution code
-     */
-    public String getInstitutionCode() {
-        return institutionCode;
-    }
-
-    /**
-     * Sets institution code.
-     *
-     * @param institutionCode the institution code
-     */
-    public void setInstitutionCode(String institutionCode) {
-        this.institutionCode = institutionCode;
-    }
-
-    /**
-     * Gets institution name.
-     *
-     * @return the institution name
-     */
-    public String getInstitutionName() {
-        return institutionName;
-    }
-
-    /**
-     * Sets institution name.
-     *
-     * @param institutionName the institution name
-     */
-    public void setInstitutionName(String institutionName) {
-        this.institutionName = institutionName;
-    }
 }

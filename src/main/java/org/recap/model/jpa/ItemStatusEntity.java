@@ -1,5 +1,8 @@
 package org.recap.model.jpa;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -9,6 +12,8 @@ import java.io.Serializable;
 @Entity
 @Table(name = "item_status_t", schema = "recap", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "ITEM_STATUS_ID"))
+@Getter
+@Setter
 public class ItemStatusEntity extends AbstractEntity<Integer>{
 
     @Column(name = "STATUS_CODE")
@@ -17,39 +22,4 @@ public class ItemStatusEntity extends AbstractEntity<Integer>{
     @Column(name = "STATUS_DESC")
     private String statusDescription;
 
-    /**
-     * Gets status code.
-     *
-     * @return the status code
-     */
-    public String getStatusCode() {
-        return statusCode;
-    }
-
-    /**
-     * Sets status code.
-     *
-     * @param statusCode the status code
-     */
-    public void setStatusCode(String statusCode) {
-        this.statusCode = statusCode;
-    }
-
-    /**
-     * Gets status description.
-     *
-     * @return the status description
-     */
-    public String getStatusDescription() {
-        return statusDescription;
-    }
-
-    /**
-     * Sets status description.
-     *
-     * @param statusDescription the status description
-     */
-    public void setStatusDescription(String statusDescription) {
-        this.statusDescription = statusDescription;
-    }
 }
