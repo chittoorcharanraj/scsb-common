@@ -24,35 +24,4 @@ public class BulkCustomerCodeEntity extends AbstractEntity<Integer> {
     @JoinColumn(name = "OWNING_INST_ID", insertable = false, updatable = false)
     private InstitutionEntity institutionEntity;
 
-    public String getCustomerCode() {
-        return customerCode;
-    }
-
-    public void setCustomerCode(String customerCode) {
-        this.customerCode = customerCode;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Integer getOwningInstitutionId() {
-        return owningInstitutionId;
-    }
-
-    public void setOwningInstitutionId(Integer owningInstitutionId) {
-        this.owningInstitutionId = owningInstitutionId;
-    }
-
-    public InstitutionEntity getInstitutionEntity() {
-        return institutionEntity;
-    }
-
-    public void setInstitutionEntity(InstitutionEntity institutionEntity) {
-        this.institutionEntity = institutionEntity;
-    }
 }
