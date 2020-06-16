@@ -3,7 +3,15 @@ package org.recap.model.jpa;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.AttributeOverride;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.TemporalType;
+import javax.persistence.JoinTable;
+import javax.persistence.Temporal;
+import javax.persistence.ElementCollection;
+import javax.persistence.JoinColumn;
 import java.util.Date;
 import java.util.Set;
 
