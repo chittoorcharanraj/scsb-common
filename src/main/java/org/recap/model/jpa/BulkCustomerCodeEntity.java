@@ -1,7 +1,13 @@
 package org.recap.model.jpa;
 
-import javax.persistence.*;
-import java.io.Serializable;
+import javax.persistence.AttributeOverride;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.ManyToOne;
+import javax.persistence.JoinColumn;
+import javax.persistence.CascadeType;
+
 
 /**
  * Created by akulak on 20/10/17.
@@ -24,35 +30,4 @@ public class BulkCustomerCodeEntity extends AbstractEntity<Integer> {
     @JoinColumn(name = "OWNING_INST_ID", insertable = false, updatable = false)
     private InstitutionEntity institutionEntity;
 
-    public String getCustomerCode() {
-        return customerCode;
-    }
-
-    public void setCustomerCode(String customerCode) {
-        this.customerCode = customerCode;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Integer getOwningInstitutionId() {
-        return owningInstitutionId;
-    }
-
-    public void setOwningInstitutionId(Integer owningInstitutionId) {
-        this.owningInstitutionId = owningInstitutionId;
-    }
-
-    public InstitutionEntity getInstitutionEntity() {
-        return institutionEntity;
-    }
-
-    public void setInstitutionEntity(InstitutionEntity institutionEntity) {
-        this.institutionEntity = institutionEntity;
-    }
 }
