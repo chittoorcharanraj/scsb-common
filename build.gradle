@@ -74,7 +74,7 @@ dependencies {
 
     runtime('mysql:mysql-connector-java:8.0.19')
     //runtime("org.springframework.boot:spring-boot-starter-actuator")
-    runtime group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.2.6.RELEASE'
+    //runtime group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.2.6.RELEASE'
 
 
 }
