@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * The type SCSB Common Application.
  */
-@SpringBootApplication
+
 public class ScsbCommonApplication {
 
 	/**
@@ -14,7 +14,7 @@ public class ScsbCommonApplication {
 	 *
 	 * @param args the input arguments
 	 */
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		SpringApplication.run(ScsbCommonApplication.class, args);
-	}
+	}*/
 }
