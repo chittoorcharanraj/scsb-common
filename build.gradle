@@ -72,7 +72,7 @@ dependencies {
     //testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.6.RELEASE'
 
-    runtime('mysql:mysql-connector-java:8.0.19')
+    runtime('mysql:mysql-connector-java')
     //runtime("org.springframework.boot:spring-boot-starter-actuator")
     runtime group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.2.6.RELEASE'
 
