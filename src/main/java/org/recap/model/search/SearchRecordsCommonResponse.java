@@ -1,16 +1,12 @@
 package org.recap.model.search;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by rajeshbabuk on 2/1/17.
  */
-@Getter
-@Setter
+@Data
 public class SearchRecordsCommonResponse {
     private Integer totalPageCount = 0;
     private String totalBibRecordsCount = "0";
