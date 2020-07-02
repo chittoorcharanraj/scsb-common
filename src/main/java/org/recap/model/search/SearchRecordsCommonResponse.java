@@ -1,12 +1,14 @@
 package org.recap.model.search;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 
 /**
  * Created by rajeshbabuk on 2/1/17.
  */
-@Data
+@Getter
+@Setter
 public class SearchRecordsCommonResponse {
     private Integer totalPageCount = 0;
     private String totalBibRecordsCount = "0";

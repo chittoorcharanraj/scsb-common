@@ -1,6 +1,5 @@
 package org.recap.model.jpa;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,7 +17,8 @@ import java.util.Date;
 @Entity
 @Table(name = "ACCESSION_T", schema = "recap", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "ACCESSION_ID"))
-@Data
+@Getter
+@Setter
 public class AccessionEntity extends AbstractEntity<Integer> {
     @Column(name = "ACCESSION_REQUEST")
     private String accessionRequest;

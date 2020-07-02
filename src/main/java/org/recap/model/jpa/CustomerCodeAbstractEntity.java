@@ -1,6 +1,7 @@
 package org.recap.model.jpa;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -11,7 +12,8 @@ import javax.persistence.MappedSuperclass;
 /**
  * Created by rajeshbabuk on 18/10/16.
  */
-@Data
+@Getter
+@Setter
 @MappedSuperclass
 public class CustomerCodeAbstractEntity extends AbstractEntity<Integer> {
 
