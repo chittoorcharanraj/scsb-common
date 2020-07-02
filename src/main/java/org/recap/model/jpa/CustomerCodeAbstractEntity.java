@@ -3,24 +3,19 @@ package org.recap.model.jpa;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.ManyToOne;
-import javax.persistence.JoinColumn;
 import javax.persistence.CascadeType;
-
+import javax.persistence.Column;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.MappedSuperclass;
 
 /**
- * Created by akulak on 20/10/17.
+ * Created by rajeshbabuk on 18/10/16.
  */
 @Getter
 @Setter
-@Entity
-@Table(name = "bulk_customer_code_t", schema = "recap", catalog = "")
-@AttributeOverride(name = "id", column = @Column(name = "BULK_CUSTOMER_CODE_ID"))
-public class BulkCustomerCodeEntity extends AbstractEntity<Integer> {
+@MappedSuperclass
+public class CustomerCodeAbstractEntity extends AbstractEntity<Integer> {
 
     @Column(name = "CUSTOMER_CODE")
     private String customerCode;
@@ -31,8 +26,10 @@ public class BulkCustomerCodeEntity extends AbstractEntity<Integer> {
     @Column(name = "OWNING_INST_ID")
     private Integer owningInstitutionId;
 
+    @Column(name = "DELIVERY_RESTRICTIONS")
+    private String deliveryRestrictions;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "OWNING_INST_ID", insertable = false, updatable = false)
     private InstitutionEntity institutionEntity;
-
 }
