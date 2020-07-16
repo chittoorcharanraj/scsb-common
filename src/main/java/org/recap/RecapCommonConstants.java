@@ -28,7 +28,7 @@ public class RecapCommonConstants {
     public static final String REQUEST_EXCEPTION_REST = "RestClient : ";
     public static final String REQUEST_EXCEPTION = "Exception : ";
     public static final String SCSB_SOLR_CLIENT_SERVICE_UNAVAILABLE = "Scsb Solr Client Service is Unavailable.";
-    public static final String LOG_ERROR = "error-->";
+    public static final String LOG_ERROR = "error--> {}";
     public static final String COMPLETE_STATUS = "Complete";
     public static final String REQUEST_MESSAGE_RECEVIED = "Message received, your request will be processed";
     public static final String PURGE_EXCEPTION_REQUESTS = "PurgeExceptionRequests";
