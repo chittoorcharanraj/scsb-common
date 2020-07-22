@@ -1,6 +1,7 @@
 
 package org.recap.model.jaxb.marc;
 
+import org.recap.RecapCommonConstants;
 import org.recap.model.jaxb.JAXBContextHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,7 +52,7 @@ public class CollectionType implements Serializable {
 
     private static final Logger LOG = LoggerFactory.getLogger(CollectionType.class);
 
-    @XmlElement(nillable = true)
+    @XmlElement(nillable = true, namespace= RecapCommonConstants.MARC_DATA_LOAD_NAMESPACE)
     private List<RecordType> record;
     @XmlAttribute(name = "id")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)

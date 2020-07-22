@@ -265,4 +265,5 @@ public class RecapCommonConstants {
     public static final String CGD_CHANGE_LOG_OPEN_TO_PRIVATE = "OpenToPrivate";
     public static final String DATE_FORMAT_FOR_FILE_NAME = "ddMMMyyyy";
     public static final String VALID_REQUEST = "All request parameters are valid.Patron is eligible to raise a request";
+    public static final String MARC_DATA_LOAD_NAMESPACE = "http://www.loc.gov/MARC21/slim";
 }

@@ -1,11 +1,9 @@
 
 package org.recap.model.jaxb.marc;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlID;
+import org.recap.RecapCommonConstants;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
@@ -42,8 +40,11 @@ import java.util.List;
 })
 public class RecordType implements Serializable {
 
+    @XmlElement(namespace= RecapCommonConstants.MARC_DATA_LOAD_NAMESPACE)
     protected LeaderFieldType leader;
+    @XmlElement(namespace= RecapCommonConstants.MARC_DATA_LOAD_NAMESPACE)
     private List<ControlFieldType> controlfield;
+    @XmlElement(namespace= RecapCommonConstants.MARC_DATA_LOAD_NAMESPACE)
     private List<DataFieldType> datafield;
     @XmlAttribute(name = "type")
     protected RecordTypeType type;
