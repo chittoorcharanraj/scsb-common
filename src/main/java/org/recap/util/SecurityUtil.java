@@ -31,7 +31,7 @@ public class SecurityUtil {
         Key aesKey = new SecretKeySpec(encryptionSecretKey.getBytes(), "AES");
         String encryptedString = null;
         try {
-            Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
+            Cipher cipher = Cipher.getInstance("AES");
             cipher.init(Cipher.ENCRYPT_MODE, aesKey);
             byte[] encrypted = cipher.doFinal(inputValue.getBytes());
             Base64.Encoder encoder = Base64.getEncoder();
@@ -52,7 +52,7 @@ public class SecurityUtil {
 
         String decrypted = null;
         try {
-            cipher = Cipher.getInstance("AES/GCM/NoPadding");
+            cipher = Cipher.getInstance("AES");
             cipher.init(Cipher.DECRYPT_MODE, aesKey);
             decrypted = new String(cipher.doFinal(decoder.decode(encryptedValue)));
         } catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException |
