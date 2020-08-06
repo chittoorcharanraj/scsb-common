@@ -40,7 +40,7 @@ public class SecurityUtil {
                 IllegalBlockSizeException | BadPaddingException e) {
             logger.error(RecapCommonConstants.LOG_ERROR,e);
         }
-        logger.info("encryptedString--->{}",encryptedString);
+        logger.debug("encryptedString--->{}",encryptedString);
         return encryptedString;
     }
 
@@ -59,7 +59,7 @@ public class SecurityUtil {
                 IllegalBlockSizeException | BadPaddingException e) {
             logger.error(RecapCommonConstants.LOG_ERROR,e);
         }
-        logger.info("decryptedString--->{}",decrypted);
+        logger.debug("decryptedString--->{}",decrypted);
         return decrypted;
     }
 }
