@@ -267,5 +267,5 @@ public class RecapCommonConstants {
     public static final String VALID_REQUEST = "All request parameters are valid.Patron is eligible to raise a request";
     public static final String MARC_DATA_LOAD_NAMESPACE = "http://www.loc.gov/MARC21/slim";
     public static final String RESPONSE_HEADER_CONTENT_TYPE= "Content-Type";
-    public static final String RESPONSE_HEADER_CONTENT_TYPE_VALUE= "charset=UTF-8";
+    public static final String RESPONSE_HEADER_CONTENT_TYPE_VALUE= "text/plain;charset=UTF-8";
 }
