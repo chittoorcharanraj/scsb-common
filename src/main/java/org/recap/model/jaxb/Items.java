@@ -1,4 +1,6 @@
-package org.recap.model.jaxb.marc;
+package org.recap.model.jaxb;
+
+import org.recap.model.jaxb.marc.ContentType;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
