@@ -1,12 +1,11 @@
-package org.recap.model.jaxb;
-
-import org.recap.model.jaxb.marc.ContentType;
+package org.recap.model.jaxb.marc;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by pvsubrah on 6/21/16.
@@ -14,13 +13,16 @@ import java.io.Serializable;
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Bib implements Serializable {
-    @XmlElement
+    @XmlElement(name = "owningInstitutionId")
     private String owningInstitutionId;
-    @XmlElement
+    @XmlElement(name = "owningInstitutionBibId")
     private String owningInstitutionBibId;
 
-    @XmlElement(required = true, nillable = true)
+    @XmlElement(name= "content", required = true, nillable = true)
     protected ContentType content;
+
+    @XmlElement
+    protected List<MatchingInstitutionBibIdType> matchingInstitutionBibId;
 
     /**
      * Gets owning institution bib id.
@@ -74,5 +76,13 @@ public class Bib implements Serializable {
      */
     public void setContent(ContentType content) {
         this.content = content;
+    }
+
+    public List<MatchingInstitutionBibIdType> getMatchingInstitutionBibId() {
+        return matchingInstitutionBibId;
+    }
+
+    public void setMatchingInstitutionBibId(List<MatchingInstitutionBibIdType> matchingInstitutionBibId) {
+        this.matchingInstitutionBibId = matchingInstitutionBibId;
     }
 }

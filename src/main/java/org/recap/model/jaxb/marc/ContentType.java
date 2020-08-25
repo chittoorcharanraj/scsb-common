@@ -1,14 +1,6 @@
 package org.recap.model.jaxb.marc;
 
-import org.recap.RecapCommonConstants;
-
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAccessType;
-
-
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
 /**
@@ -21,7 +13,7 @@ import java.io.Serializable;
 
 @XmlRootElement(name = "content")
 public class ContentType implements Serializable {
-    @XmlElement(required = true, nillable = true, namespace= RecapCommonConstants.MARC_DATA_LOAD_NAMESPACE)
+    @XmlElement(name="collection",required = true, nillable = true)
     protected CollectionType collection;
 
     /**

@@ -1,4 +1,4 @@
-package org.recap.model.jaxb;
+package org.recap.model.jaxb.marc;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by pvsubrah on 6/21/16.
  */
-@XmlRootElement
+@XmlRootElement(name="bibRecord")
 public class BibRecord implements Serializable{
 
     private Bib bib;
@@ -19,7 +19,7 @@ public class BibRecord implements Serializable{
      *
      * @return the bib
      */
-    @XmlElement
+    @XmlElement(name = "bib")
     public Bib getBib() {
         return bib;
     }
@@ -38,7 +38,7 @@ public class BibRecord implements Serializable{
      *
      * @return the holdings
      */
-    @XmlElement
+    @XmlElement(name = "holdings")
     public List<Holdings> getHoldings() {
         return holdings;
     }
