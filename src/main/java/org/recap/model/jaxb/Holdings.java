@@ -1,4 +1,4 @@
-package org.recap.model.jaxb.marc;
+package org.recap.model.jaxb;
 
 import javax.xml.bind.annotation.XmlElement;
 import java.io.Serializable;
