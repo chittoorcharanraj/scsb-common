@@ -8,13 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
@@ -52,7 +46,9 @@ public class CollectionType implements Serializable {
 
     private static final Logger LOG = LoggerFactory.getLogger(CollectionType.class);
 
-    @XmlElement(nillable = true, namespace= RecapCommonConstants.MARC_DATA_LOAD_NAMESPACE)
+    @XmlAttribute(name="xmlns")
+    String xmlns = RecapCommonConstants.MARC_DATA_LOAD_NAMESPACE;
+    @XmlElement
     private List<RecordType> record;
     @XmlAttribute(name = "id")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
@@ -155,5 +151,11 @@ public class CollectionType implements Serializable {
         return collectionType;
     }
 
+    public String getXmlns() {
+        return xmlns;
+    }
 
+    public void setXmlns(String xmlns) {
+        this.xmlns = xmlns;
+    }
 }
