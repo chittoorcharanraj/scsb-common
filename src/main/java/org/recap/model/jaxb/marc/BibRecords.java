@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by chenchulakshmig on 5/8/16.
  */
-@XmlRootElement(name = "bibrecords")
+@XmlRootElement(name = "bibRecords")
 public class BibRecords implements Serializable {
 
     private List<BibRecord> bibRecordList;
