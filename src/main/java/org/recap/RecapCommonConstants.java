@@ -268,4 +268,9 @@ public class RecapCommonConstants {
     public static final String MARC_DATA_LOAD_NAMESPACE = "http://www.loc.gov/MARC21/slim";
     public static final String RESPONSE_HEADER_CONTENT_TYPE= "Content-Type";
     public static final String RESPONSE_HEADER_CONTENT_TYPE_VALUE= "text/plain;charset=UTF-8";
+    /* Institution and Protocol Specific Properties */
+    public static final String SIP2_PROTOCOL = "SIP2";
+    public static final String NCIP_PROTOCOL = "NCIP";
+    public static final String REST_PROTOCOL = "REST";
+    public static final String PROTOCOL = "protocol";
 }
