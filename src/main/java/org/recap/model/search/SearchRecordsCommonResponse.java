@@ -10,6 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class SearchRecordsCommonResponse {
+    private Integer pageNumber;
     private Integer totalPageCount = 0;
     private String totalBibRecordsCount = "0";
     private String totalItemRecordsCount = "0";
