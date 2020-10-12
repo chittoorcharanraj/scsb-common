@@ -114,9 +114,7 @@ public class ILSConfigProperties {
     @SerializedName("auth.service.prefix")
     @Expose
     public String authServicePrefix;
-    @SerializedName("ils.bibdata.api.endpoint")
-    @Expose
-    public String ilsBibdataApiEndpoint;
+
     @SerializedName("email.submit.collection.nofiles.to")
     @Expose
     public String emailSubmitCollectionNofilesTo;
@@ -135,9 +133,7 @@ public class ILSConfigProperties {
     @SerializedName("ftp.request.initial.accession.error.file")
     @Expose
     public String ftpRequestInitialAccessionErrorFile;
-    @SerializedName("ils.bibdata.api.parameter")
-    @Expose
-    public String ilsBibdataApiParameter;
+
     @SerializedName("ils.pul.cross.partner.patron.id")
     @Expose
     public String ilsPulCrossPartnerPatronId;
@@ -182,4 +178,21 @@ public class ILSConfigProperties {
     @SerializedName("oauth.token.api.url")
     @Expose
     public String oauthTokenApiUrl;
+    @SerializedName("ils.bibdata.api.parameter")
+    @Expose
+    public String ilsBibdataApiParameter;
+    @SerializedName("ils.bibdata.api.endpoint")
+    @Expose
+    public String ilsBibdataApiEndpoint;
+    @SerializedName("ils.bibdata.api.auth")
+    @Expose
+    public String ilsBibdataApiAuth;
+    @SerializedName("bibdata.format")
+    @Expose
+    public String bibDataFormat;
+
+    @SerializedName("ils.refile.endpoint.protocol")
+    @Expose
+    public String ilsRefileEndpointProtocol;
+
 }
