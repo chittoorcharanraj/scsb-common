@@ -29,13 +29,7 @@ public class ILSConfigProperties {
     @Expose
     public String protocol;
 
-    /* ILS General Properties */
-/*  @SerializedName("email.data.dump.to")
-    @Expose
-    public String emailDataDumpTo;
-    @SerializedName("email.request.recall.cc")
-    @Expose
-    public String emailRequestRecallCc;
+/*
     @SerializedName("ftp.submit.collection.cgdprotected.dir")
     @Expose
     public String ftpSubmitCollectionCgdprotectedDir;
@@ -45,12 +39,6 @@ public class ILSConfigProperties {
     @SerializedName("etl.initial.data.loaded.date")
     @Expose
     public String etlInitialDataLoadedDate;
-    @SerializedName("email.accession.reconciliation.cc")
-    @Expose
-    public String emailAccessionReconciliationCc;
-    @SerializedName("email.submit.collection.to")
-    @Expose
-    public String emailSubmitCollectionTo;
     @SerializedName("request.initial.load.filepath")
     @Expose
     public String requestInitialLoadFilepath;
@@ -69,12 +57,6 @@ public class ILSConfigProperties {
     @SerializedName("ftp.submit.collection.report.dir")
     @Expose
     public String ftpSubmitCollectionReportDir;
-    @SerializedName("email.matching.reports.to")
-    @Expose
-    public String emailMatchingReportsTo;
-    @SerializedName("email.technical.support.to")
-    @Expose
-    public String emailTechnicalSupportTo;
     @SerializedName("ils.edd.patron.id")
     @Expose
     public String ilsEddPatronId;
@@ -87,37 +69,15 @@ public class ILSConfigProperties {
     @SerializedName("ftp.accession.reconciliation.dir")
     @Expose
     public String ftpAccessionReconciliationDir;
-    @SerializedName("email.submit.collection.cc")
-    @Expose
-    public String emailSubmitCollectionCc;
-    @SerializedName("email.accession.reports.to")
-    @Expose
-    public String emailAccessionReportsTo;
-    @SerializedName("email.admin.role.to")
-    @Expose
-    public String emailAdminRoleTo;
     @SerializedName("auth.service.login")
     @Expose
     public String authServiceLogin;
-    @SerializedName("email.accession.reconciliation.to")
-    @Expose
-    public String emailAccessionReconciliationTo;
-    @SerializedName("email.request.refile.to")
-    @Expose
-    public String emailRequestRefileTo;
     @SerializedName("submit.collection.fileprocess.workdir")
     @Expose
     public String submitCollectionFileprocessWorkdir;
-    @SerializedName("email.data.dump.cc")
-    @Expose
-    public String emailDataDumpCc;
     @SerializedName("auth.service.prefix")
     @Expose
     public String authServicePrefix;
-
-    @SerializedName("email.submit.collection.nofiles.to")
-    @Expose
-    public String emailSubmitCollectionNofilesTo;
     @SerializedName("email.recall.request.to")
     @Expose
     public String emailRecallRequestTo;
@@ -127,13 +87,9 @@ public class ILSConfigProperties {
     @SerializedName("ftp.request.initial.accession.dir")
     @Expose
     public String ftpRequestInitialAccessionDir;
-    @SerializedName("email.request.initial.load.to")
-    @Expose
-    public String emailRequestInitialLoadTo;
     @SerializedName("ftp.request.initial.accession.error.file")
     @Expose
     public String ftpRequestInitialAccessionErrorFile;
-
     @SerializedName("ils.pul.cross.partner.patron.id")
     @Expose
     public String ilsPulCrossPartnerPatronId;
@@ -147,13 +103,63 @@ public class ILSConfigProperties {
     @Expose
     public String ilsNyplEddPatronId;  */
 
-    /* ILS OAUTH Properties */
-    @SerializedName("ils.rest.data.api")
+    /* ILS General Properties */
+
+    /* Matching Algo Reports Properties */
+    @SerializedName("email.matching.reports.to")
     @Expose
-    public String ilsRestDataApi;
-    @SerializedName("ils.rest.polling.max.timeout")
+    public String emailMatchingReportsTo;
+
+    /* Accession Properties */
+    @SerializedName("email.accession.reconciliation.cc")
     @Expose
-    public String ilsRestPollingMaxTimeout;
+    public String emailAccessionReconciliationCc;
+    @SerializedName("email.accession.reports.to")
+    @Expose
+    public String emailAccessionReportsTo;
+    @SerializedName("email.accession.reconciliation.to")
+    @Expose
+    public String emailAccessionReconciliationTo;
+
+    /* Submit Collection Properties */
+    @SerializedName("email.submit.collection.to")
+    @Expose
+    public String emailSubmitCollectionTo;
+    @SerializedName("email.submit.collection.cc")
+    @Expose
+    public String emailSubmitCollectionCc;
+
+    /* Data Dump Properties */
+    @SerializedName("email.data.dump.to")
+    @Expose
+    public String emailDataDumpTo;
+    @SerializedName("email.data.dump.cc")
+    @Expose
+    public String emailDataDumpCc;
+
+    /* Email Request Properties */
+    @SerializedName("email.recall.request.to")
+    @Expose
+    public String emailRecallRequestTo;
+    @SerializedName("email.request.recall.cc")
+    @Expose
+    public String emailRequestRecallCc;
+    @SerializedName("email.request.initial.load.to")
+    @Expose
+    public String emailRequestInitialLoadTo;
+    @SerializedName("email.request.refile.to")
+    @Expose
+    public String emailRequestRefileTo;
+
+    /* Other Email Properties */
+    @SerializedName("email.admin.role.to")
+    @Expose
+    public String emailAdminRoleTo;
+    @SerializedName("email.technical.support.to")
+    @Expose
+    public String emailTechnicalSupportTo;
+
+    /* ILS OAuth Properties */
     @SerializedName("oauth2.client.clientid")
     @Expose
     public String oauth2ClientClientid;
@@ -178,6 +184,14 @@ public class ILSConfigProperties {
     @SerializedName("oauth.token.api.url")
     @Expose
     public String oauthTokenApiUrl;
+
+    /* ILS Rest Properties */
+    @SerializedName("ils.rest.data.api")
+    @Expose
+    public String ilsRestDataApi;
+    @SerializedName("ils.rest.polling.max.timeout")
+    @Expose
+    public String ilsRestPollingMaxTimeout;
     @SerializedName("ils.bibdata.api.parameter")
     @Expose
     public String ilsBibdataApiParameter;
@@ -190,7 +204,6 @@ public class ILSConfigProperties {
     @SerializedName("bibdata.format")
     @Expose
     public String bibDataFormat;
-
     @SerializedName("ils.refile.endpoint.protocol")
     @Expose
     public String ilsRefileEndpointProtocol;
