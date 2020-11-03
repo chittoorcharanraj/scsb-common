@@ -208,4 +208,45 @@ public class ILSConfigProperties {
     @Expose
     public String ilsRefileEndpointProtocol;
 
+    @SerializedName("submitCollection.protected.ftpDir")
+    @Expose
+    public String submitCollectionProtectedFtpDir;
+
+    @SerializedName("submitCollection.protected.localDir")
+    @Expose
+    public String submitCollectionProtectedLocalDir;
+
+    @SerializedName("submitCollection.notProtected.ftpDir")
+    @Expose
+    public String submitCollectionNotProtectedFtpDir;
+
+    @SerializedName("submitCollection.notProtected.localDir")
+    @Expose
+    public String submitCollectionNotProtectedLocalDir;
+
+    @SerializedName("ftp.accession.reconciliation.dir")
+    @Expose
+    public String ftpAccessionReconciliationDir;
+
+    @SerializedName("ftp.accession.reconciliation.processed.dir")
+    @Expose
+    public String ftpAccessionReconciliationProcessedDir;
+
+    @SerializedName("accession.reconciliation.filePath")
+    @Expose
+    public String accessionReconciliationFilepath;
+
+    @SerializedName("accession.reconciliation.workdir")
+    @Expose
+    public String accessionReconciliationWorkdir;
+
+    @SerializedName("accession.reconciliation.ftp.routeId")
+    @Expose
+    public String accessionReconciliationFtpRouteId;
+
+    @SerializedName("accession.reconciliation.direct.routeId")
+    @Expose
+    public String accessionReconciliationDirectRouteId;
+
+
 }
