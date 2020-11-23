@@ -1,6 +1,7 @@
 package org.recap;
 
 public class RecapCommonConstants {
+    private RecapCommonConstants() {}
     public static final String API_KEY = "api_key";
     public static final String RECAP = "recap";
     public static final String FAILURE = "Failure";
@@ -268,9 +269,14 @@ public class RecapCommonConstants {
     public static final String MARC_DATA_LOAD_NAMESPACE = "http://www.loc.gov/MARC21/slim";
     public static final String RESPONSE_HEADER_CONTENT_TYPE= "Content-Type";
     public static final String RESPONSE_HEADER_CONTENT_TYPE_VALUE= "text/plain;charset=UTF-8";
+
     /* Institution and Protocol Specific Properties */
     public static final String SIP2_PROTOCOL = "SIP2";
     public static final String NCIP_PROTOCOL = "NCIP";
     public static final String REST_PROTOCOL = "REST";
     public static final String PROTOCOL = "protocol";
+
+    /* IMS Location Specific Properties */
+    public static final String IMS_LOCATION_RECAP = "RECAP";
+    public static final String IMS_LOCATION_HARVARD = "HD";
 }
