@@ -76,4 +76,7 @@ public class ItemAbstractEntity implements Serializable {
 
     @Column(name = "CATALOGING_STATUS")
     private String catalogingStatus;
+
+    @Column(name = "IMS_LOCATION_ID")
+    private Integer imsLocationId;
 }
