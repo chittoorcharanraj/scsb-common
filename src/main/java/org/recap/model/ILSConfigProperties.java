@@ -36,9 +36,7 @@ public class ILSConfigProperties {
     @SerializedName("auth.service.logout")
     @Expose
     public String authServiceLogout;
-    @SerializedName("etl.initial.data.loaded.date")
-    @Expose
-    public String etlInitialDataLoadedDate;
+
     @SerializedName("request.initial.load.filepath")
     @Expose
     public String requestInitialLoadFilepath;
@@ -136,6 +134,10 @@ public class ILSConfigProperties {
     @SerializedName("email.data.dump.cc")
     @Expose
     public String emailDataDumpCc;
+
+    @SerializedName("datadump.marc")
+    @Expose
+    public String datadumpMarc;
 
     /* Email Request Properties */
     @SerializedName("email.recall.request.to")
@@ -248,5 +250,16 @@ public class ILSConfigProperties {
     @Expose
     public String accessionReconciliationDirectRouteId;
 
+    @SerializedName("etl.incremental.dump")
+    @Expose
+    public String etlIncrementalDump;
+
+    @SerializedName("etl.deleted.dump")
+    @Expose
+    public String etlDeletedDump;
+
+    @SerializedName("etl.initial.data.loaded.date")
+    @Expose
+    public String etlInitialDataLoadedDate;
 
 }
