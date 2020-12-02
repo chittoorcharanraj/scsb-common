@@ -1,5 +1,7 @@
 package org.recap.model.transfer;
 
+import org.recap.model.BaseModel;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,7 +10,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class Destination {
+public class Destination implements BaseModel {
     private String owningInstitutionBibId;
     private String owningInstitutionHoldingsId;
 }

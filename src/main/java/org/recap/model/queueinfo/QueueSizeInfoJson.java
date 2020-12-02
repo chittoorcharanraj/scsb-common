@@ -1,5 +1,7 @@
 package org.recap.model.queueinfo;
 
+import org.recap.model.BaseModel;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,6 +12,6 @@ import lombok.Setter;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Getter
 @Setter
-public class QueueSizeInfoJson {
+public class QueueSizeInfoJson implements BaseModel {
     private String value;
 }

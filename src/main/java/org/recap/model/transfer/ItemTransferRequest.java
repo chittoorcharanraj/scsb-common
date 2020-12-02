@@ -1,5 +1,7 @@
 package org.recap.model.transfer;
 
+import org.recap.model.BaseModel;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,7 +11,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class ItemTransferRequest {
+public class ItemTransferRequest implements BaseModel {
     private ItemSource source;
     private ItemDestination destination;
 }

@@ -10,7 +10,7 @@ import java.util.List;
  */
 @Getter
 @Setter
-public class ItemRefileRequest {
+public class ItemRefileRequest extends BaseModel {
     private List<String> itemBarcodes;
     private List<Integer> requestIds;
 }

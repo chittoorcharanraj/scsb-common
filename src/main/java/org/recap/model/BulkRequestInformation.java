@@ -9,7 +9,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class BulkRequestInformation {
+public class BulkRequestInformation implements BaseModel{
     private String requestingInstitution;
     private String patronBarcode;
 }

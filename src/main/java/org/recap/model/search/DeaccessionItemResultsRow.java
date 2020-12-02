@@ -1,5 +1,7 @@
 package org.recap.model.search;
 
+import org.recap.model.BaseModel;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,7 +10,7 @@ import lombok.Setter;
  */
 @Setter
 @Getter
-public class DeaccessionItemResultsRow {
+public class DeaccessionItemResultsRow implements BaseModel {
 
     private Integer itemId;
     private String deaccessionDate;

@@ -1,5 +1,7 @@
 package org.recap.model.reports;
 
+import org.recap.model.BaseModel;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,7 +10,7 @@ import lombok.Setter;
  */
 @Setter
 @Getter
-public class ReportDataRequest {
+public class ReportDataRequest implements BaseModel {
 
     private String fileName;
     private String institutionCode;

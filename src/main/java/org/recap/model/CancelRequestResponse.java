@@ -9,7 +9,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class CancelRequestResponse {
+public class CancelRequestResponse implements BaseModel{
     private String screenMessage;
     private boolean success;
 }
