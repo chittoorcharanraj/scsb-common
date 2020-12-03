@@ -8,7 +8,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class BibItemAvailabityStatusRequest {
+public class BibItemAvailabityStatusRequest implements BaseModel{
     private String bibliographicId;
     private String institutionId;
 }

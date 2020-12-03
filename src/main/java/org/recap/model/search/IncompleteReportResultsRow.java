@@ -1,5 +1,7 @@
 package org.recap.model.search;
 
+import org.recap.model.BaseModel;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,7 +10,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class IncompleteReportResultsRow {
+public class IncompleteReportResultsRow implements BaseModel {
     private String author;
     private String createdDate;
     private String title;

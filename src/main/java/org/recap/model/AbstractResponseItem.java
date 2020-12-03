@@ -8,7 +8,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public abstract class AbstractResponseItem {
+public abstract class AbstractResponseItem implements BaseModel {
 
     private String itemBarcode;
     private String itemOwningInstitution=""; // PUL, CUL, NYPL

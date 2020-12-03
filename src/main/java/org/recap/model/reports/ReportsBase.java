@@ -2,6 +2,8 @@ package org.recap.model.reports;
 
 import lombok.Getter;
 import lombok.Setter;
+
+import org.recap.model.BaseModel;
 import org.recap.model.search.DeaccessionItemResultsRow;
 import org.recap.model.search.IncompleteReportResultsRow;
 
@@ -10,7 +12,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class ReportsBase {
+public class ReportsBase implements BaseModel {
 
     private long accessionPrivatePulCount;
     private long accessionPrivateCulCount;

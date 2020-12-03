@@ -6,12 +6,14 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.recap.model.BaseModel;
+
 /**
  * Created by rajeshbabuk on 13/1/17.
  */
 @Getter
 @Setter
-public class ReportsRequest {
+public class ReportsRequest implements BaseModel {
 
     private String accessionDeaccessionFromDate;
     private String accessionDeaccessionToDate;

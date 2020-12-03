@@ -1,5 +1,7 @@
 package org.recap.model.deaccession;
 
+import org.recap.model.BaseModel;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,7 +10,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class DeAccessionItem {
+public class DeAccessionItem implements BaseModel {
 
     private String itemBarcode;
     private String deliveryLocation;

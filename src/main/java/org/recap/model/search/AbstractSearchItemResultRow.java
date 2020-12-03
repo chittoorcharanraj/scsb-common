@@ -1,5 +1,7 @@
 package org.recap.model.search;
 
+import org.recap.model.BaseModel;
+
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +11,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class AbstractSearchItemResultRow {
+public class AbstractSearchItemResultRow implements BaseModel {
     @ApiModelProperty(name= "callNumber", value= "Call Number",position = 0)
     private String callNumber;
     @ApiModelProperty(name= "chronologyAndEnum", value= "Chronology And Enum",position = 1)

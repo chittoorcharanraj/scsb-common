@@ -1,5 +1,7 @@
 package org.recap.model.search;
 
+import org.recap.model.BaseModel;
+
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +12,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class AbstractSearchResultRow {
+public class AbstractSearchResultRow implements BaseModel {
     @ApiModelProperty(name= "bibId", value= "Bibliographic Id",position = 0)
     private Integer bibId;
     @ApiModelProperty(name= "title", value= "Book Title",position = 1)
