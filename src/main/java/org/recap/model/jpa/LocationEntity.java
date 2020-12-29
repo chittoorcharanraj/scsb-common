@@ -10,16 +10,16 @@ import java.util.Date;
  * Created by pvsubrah on 6/11/16.
  */
 @Entity
-@Table(name = "location_t", schema = "recap", catalog = "")
+@Table(name = "ims_location_t", schema = "recap", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "LOCATION_ID"))
 @Getter
 @Setter
 public class LocationEntity extends AbstractEntity<Integer> {
 
-    @Column(name = "LOCATION_CODE")
+    @Column(name = "IMS_LOCATION_CODE")
     private String locationCode;
 
-    @Column(name = "LOCATION_NAME")
+    @Column(name = "IMS_LOCATION_NAME")
     private String locationName;
 
     @Column(name = "DESCRIPTION")
