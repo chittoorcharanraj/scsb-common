@@ -25,7 +25,7 @@ public class ILSConfigProperties {
     @SerializedName("ils.server.operator.location")
     @Expose
     public String operatorLocation;
-    @SerializedName("protocol")
+    @SerializedName("ils.protocol")
     @Expose
     public String protocol;
 

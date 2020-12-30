@@ -27,7 +27,4 @@ public class InstitutionEntity extends AbstractEntity<Integer> {
     @Column(name = "ILS_PROTOCOL")
     private String ilsProtocol;
 
-    @Column(name = "PROTOCOL")
-    private String protocol;
-
 }
