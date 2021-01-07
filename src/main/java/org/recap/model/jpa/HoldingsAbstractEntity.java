@@ -18,14 +18,10 @@ import java.util.Date;
 @Getter
 @Setter
 @MappedSuperclass
-public class HoldingsAbstractEntity implements Serializable {
+public class HoldingsAbstractEntity extends AbstractEntity<Integer>  implements Serializable {
 
-    @Id
     @Column(name = "OWNING_INST_ID")
     private Integer owningInstitutionId;
-
-    @Column(name = "HOLDINGS_ID", insertable = false, updatable = false)
-    private Integer holdingsId;
 
     @Lob
     @Column(name = "CONTENT")
@@ -45,7 +41,6 @@ public class HoldingsAbstractEntity implements Serializable {
     @Column(name = "LAST_UPDATED_BY")
     private String lastUpdatedBy;
 
-    @Id
     @Column(name = "OWNING_INST_HOLDINGS_ID")
     private String owningInstitutionHoldingsId;
 

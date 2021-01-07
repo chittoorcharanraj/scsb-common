@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Column;
-import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -18,11 +17,9 @@ import java.util.Date;
 @Getter
 @Setter
 @MappedSuperclass
-public class ItemAbstractEntity implements Serializable {
-    @Column(name = "ITEM_ID", insertable = false, updatable = false)
-    private Integer itemId;
+public class ItemAbstractEntity extends AbstractEntity<Integer>  implements Serializable {
 
-    @Column(name = "BARCODE")
+   @Column(name = "BARCODE")
     private String barcode;
 
     @Column(name = "CUSTOMER_CODE")
@@ -40,7 +37,6 @@ public class ItemAbstractEntity implements Serializable {
     @Column(name = "COPY_NUMBER")
     private Integer copyNumber;
 
-    @Id
     @Column(name = "OWNING_INST_ID")
     private Integer owningInstitutionId;
 
@@ -67,7 +63,6 @@ public class ItemAbstractEntity implements Serializable {
     @Column(name = "VOLUME_PART_YEAR")
     private String volumePartYear;
 
-    @Id
     @Column(name = "OWNING_INST_ITEM_ID")
     private String owningInstitutionItemId;
 
