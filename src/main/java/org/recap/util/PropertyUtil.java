@@ -52,14 +52,6 @@ public class PropertyUtil {
         try {
             JSONObject institutionSpecificJson = getPropertyByInstitution(institution);
             ilsConfigProperties = gson.fromJson(institutionSpecificJson.toString(), ILSConfigProperties.class);
-            /*String protocol = institutionSpecificJson.get(RecapCommonConstants.PROTOCOL).toString();
-            log.info("Protocol: {}", protocol);
-            if (RecapCommonConstants.REST_PROTOCOL.equalsIgnoreCase(protocol)) {
-                ilsConfigProperties = gson.fromJson(institutionSpecificJson.toString(), ILSOAuthConfigProperties.class);
-            } else {
-                ilsConfigProperties = gson.fromJson(institutionSpecificJson.toString(), ILSConfigProperties.class);
-            }*/
-            log.info(ilsConfigProperties.toString());
         } catch (Exception ex) {
             ex.printStackTrace();
         }
