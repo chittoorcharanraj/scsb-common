@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Column;
-import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;
@@ -18,17 +17,13 @@ import java.util.Date;
 @Getter
 @Setter
 @MappedSuperclass
-public class BibliographicAbstractEntity implements Serializable {
-    @Id
+public class BibliographicAbstractEntity extends AbstractEntity<Integer> implements Serializable {
+    
     @Column(name = "OWNING_INST_ID")
     private Integer owningInstitutionId;
 
-    @Id
     @Column(name = "OWNING_INST_BIB_ID")
     private String owningInstitutionBibId;
-
-    @Column(name = "BIBLIOGRAPHIC_ID", insertable = false, updatable = false)
-    private Integer bibliographicId;
 
     @Lob
     @Column(name = "CONTENT")
