@@ -25,7 +25,7 @@ public class ILSConfigProperties {
     @SerializedName("ils.server.operator.location")
     @Expose
     public String operatorLocation;
-    @SerializedName("protocol")
+    @SerializedName("ils.protocol")
     @Expose
     public String protocol;
 
@@ -37,9 +37,7 @@ public class ILSConfigProperties {
     @Expose
     public String authServiceLogout;
 
-    @SerializedName("request.initial.load.filepath")
-    @Expose
-    public String requestInitialLoadFilepath;
+
     @SerializedName("ils.nypl.cross.partner.patron.id")
     @Expose
     public String ilsNyplCrossPartnerPatronId;
@@ -79,15 +77,8 @@ public class ILSConfigProperties {
     @SerializedName("email.recall.request.to")
     @Expose
     public String emailRecallRequestTo;
-    @SerializedName("request.initial.load.workdir")
-    @Expose
-    public String requestInitialLoadWorkdir;
-    @SerializedName("ftp.request.initial.accession.dir")
-    @Expose
-    public String ftpRequestInitialAccessionDir;
-    @SerializedName("ftp.request.initial.accession.error.file")
-    @Expose
-    public String ftpRequestInitialAccessionErrorFile;
+
+
     @SerializedName("ils.pul.cross.partner.patron.id")
     @Expose
     public String ilsPulCrossPartnerPatronId;
@@ -261,5 +252,21 @@ public class ILSConfigProperties {
     @SerializedName("etl.initial.data.loaded.date")
     @Expose
     public String etlInitialDataLoadedDate;
+
+    @SerializedName("ftp.request.initial.accession.dir")
+    @Expose
+    public String ftpRequestInitialAccessionDir;
+
+    @SerializedName("ftp.request.initial.accession.error.file")
+    @Expose
+    public String ftpRequestInitialAccessionErrorFile;
+
+    @SerializedName("request.initial.load.workdir")
+    @Expose
+    public String requestInitialLoadWorkdir;
+
+    @SerializedName("request.initial.load.filepath")
+    @Expose
+    public String requestInitialLoadFilepath;
 
 }
