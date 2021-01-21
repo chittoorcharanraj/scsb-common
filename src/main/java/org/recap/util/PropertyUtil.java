@@ -3,13 +3,13 @@ package org.recap.util;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.json.JSONObject;
-import org.recap.RecapCommonConstants;
-
 import org.recap.model.ILSConfigProperties;
-import org.recap.model.ILSOAuthConfigProperties;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
+
+import java.util.Map;
+import java.util.Set;
 
 @RefreshScope
 @Service
@@ -18,6 +18,13 @@ public class PropertyUtil {
 
     @Value("${institution:No data available}")
     private String ilsConfigProperties;
+
+    public Set<String> getAllInstitutions() {
+        JSONObject json = new JSONObject(ilsConfigProperties);
+        Map<String,Object> institutionMap= json.toMap();
+        Set<String> institutions = institutionMap.keySet();
+        return institutions;
+    }
 
     /**
      * Gets property value for the key and the institution
