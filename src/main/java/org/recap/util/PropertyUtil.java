@@ -2,12 +2,16 @@ package org.recap.util;
 
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.json.JSONObject;
 import org.recap.model.ILSConfigProperties;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -19,11 +23,21 @@ public class PropertyUtil {
     @Value("${institution:No data available}")
     private String ilsConfigProperties;
 
-    public Set<String> getAllInstitutions() {
+    /**
+     * To get the list of all institution codes.
+     * @return
+     */
+    public List<String> getAllInstitutions() {
         JSONObject json = new JSONObject(ilsConfigProperties);
         Map<String,Object> institutionMap= json.toMap();
-        Set<String> institutions = institutionMap.keySet();
-        return institutions;
+        Set<String> institutionSet = new HashSet<>();
+        for (String institution : institutionMap.keySet()) {
+            if(!StringUtils.isEmpty(institution)){
+                institutionSet.add(institution);
+            }
+
+        }
+        return new ArrayList<>(institutionSet);
     }
 
     /**
