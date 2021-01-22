@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.json.JSONObject;
 import org.recap.model.ILSConfigProperties;
+import org.recap.model.IMSConfigProperties;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,10 @@ public class PropertyUtil {
 
     @Value("${institution:No data available}")
     private String ilsConfigProperties;
+
+    @Value("${ims_location:No data available}")
+    private String imsConfigProperties;
+
 
     /**
      * To get the list of all institution codes.
@@ -52,6 +57,17 @@ public class PropertyUtil {
     }
 
     /**
+     * Gets property value for the key and the institution
+     * @param imsLocation
+     * @param propertyKey
+     * @return String
+     */
+    public String getPropertyByImsLocationAndKey(String imsLocation, String propertyKey) {
+        JSONObject jsonObject = getPropertyByImsLocation(imsLocation);
+        return jsonObject.get(propertyKey).toString();
+    }
+
+    /**
      * Gets Json object with all properties for the institution
      * @param institution
      * @return JSONObject
@@ -59,6 +75,17 @@ public class PropertyUtil {
     public JSONObject getPropertyByInstitution(String institution) {
         JSONObject json = new JSONObject(ilsConfigProperties);
         JSONObject result = json.getJSONObject(institution);
+        return result;
+    }
+
+    /**
+     * Gets Json object with all properties for the institution
+     * @param imsLocation
+     * @return JSONObject
+     */
+    public JSONObject getPropertyByImsLocation(String imsLocation) {
+        JSONObject json = new JSONObject(imsConfigProperties);
+        JSONObject result = json.getJSONObject(imsLocation);
         return result;
     }
 
@@ -77,5 +104,22 @@ public class PropertyUtil {
             ex.printStackTrace();
         }
         return ilsConfigProperties;
+    }
+
+    /**
+     * Gets a DTO with all properties for the ims location
+     * @param imsLocation
+     * @return ILSConfigProperties
+     */
+    public IMSConfigProperties getIMSConfigProperties(String imsLocation) {
+        IMSConfigProperties imsConfigProperties = null;
+        Gson gson = new Gson();
+        try {
+            JSONObject imsLocationSpecificJson = getPropertyByImsLocation(imsLocation);
+            imsConfigProperties = gson.fromJson(imsLocationSpecificJson.toString(), IMSConfigProperties.class);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return imsConfigProperties;
     }
 }

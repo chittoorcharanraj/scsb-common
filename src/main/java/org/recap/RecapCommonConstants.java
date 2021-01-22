@@ -277,8 +277,6 @@ public class RecapCommonConstants {
     public static final String PROTOCOL = "protocol";
 
     /* IMS Location Specific Properties */
-    public static final String IMS_LOCATION_RECAP = "RECAP";
-    public static final String IMS_LOCATION_HARVARD = "HD";
     public static final String IMS_LOCATION_UNKNOWN = "UN";
 
     /* ActiveMQ Component Name */
