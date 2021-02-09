@@ -269,4 +269,16 @@ public class ILSConfigProperties {
     @Expose
     public String requestInitialLoadFilepath;
 
+    @SerializedName("ils.agency.id")
+    @Expose
+    public String ncipAgencyId;
+
+    @SerializedName("ils.scheme")
+    @Expose
+    public String ncipScheme;
+
+    @SerializedName("ils.api.key")
+    @Expose
+    public String ilsApiKey;
+
 }
