@@ -1,5 +1,6 @@
 package org.recap.model.jpa;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,15 +15,19 @@ import java.util.Date;
 /**
  * Created by sureshss on 02/20/20.
  */
+
+@EqualsAndHashCode(onlyExplicitlyIncluded = true, callSuper = false)
 @Getter
 @Setter
 @MappedSuperclass
 public class BibliographicAbstractEntity extends AbstractEntity<Integer> implements Serializable {
     
     @Column(name = "OWNING_INST_ID")
+    @EqualsAndHashCode.Include
     private Integer owningInstitutionId;
 
     @Column(name = "OWNING_INST_BIB_ID")
+    @EqualsAndHashCode.Include
     private String owningInstitutionBibId;
 
     @Lob
