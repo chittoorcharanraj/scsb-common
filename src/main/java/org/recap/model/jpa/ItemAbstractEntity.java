@@ -1,5 +1,6 @@
 package org.recap.model.jpa;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,6 +17,7 @@ import java.util.Date;
 
 @Getter
 @Setter
+@EqualsAndHashCode(onlyExplicitlyIncluded = true, callSuper = false)
 @MappedSuperclass
 public class ItemAbstractEntity extends AbstractEntity<Integer>  implements Serializable {
 
@@ -37,6 +39,7 @@ public class ItemAbstractEntity extends AbstractEntity<Integer>  implements Seri
     @Column(name = "COPY_NUMBER")
     private Integer copyNumber;
 
+    @EqualsAndHashCode.Include
     @Column(name = "OWNING_INST_ID")
     private Integer owningInstitutionId;
 
@@ -63,6 +66,7 @@ public class ItemAbstractEntity extends AbstractEntity<Integer>  implements Seri
     @Column(name = "VOLUME_PART_YEAR")
     private String volumePartYear;
 
+    @EqualsAndHashCode.Include
     @Column(name = "OWNING_INST_ITEM_ID")
     private String owningInstitutionItemId;
 
