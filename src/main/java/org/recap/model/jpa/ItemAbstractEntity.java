@@ -39,6 +39,9 @@ public class ItemAbstractEntity extends AbstractEntity<Integer>  implements Seri
     @Column(name = "COPY_NUMBER")
     private Integer copyNumber;
 
+    @Column(name = "ITEM_LIBRARY")
+    private String itemLibrary;
+
     @EqualsAndHashCode.Include
     @Column(name = "OWNING_INST_ID")
     private Integer owningInstitutionId;
