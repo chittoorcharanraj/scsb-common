@@ -45,4 +45,6 @@ public class AbstractSearchResultRow {
     private boolean selectAllItems = false;
     @ApiModelProperty(name= "itemId", value= "Item Id",position = 17)
     private Integer itemId;
+    @ApiModelProperty(name= "imsLocation", value= "Ims Location",position = 18)
+    private String imsLocation;
 }
