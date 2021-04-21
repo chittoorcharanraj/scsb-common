@@ -24,7 +24,9 @@ public class AbstractSearchItemResultRow {
     private String collectionGroupDesignation;
     @ApiModelProperty(name= "availability", value= "Availability",position = 6)
     private String availability;
-    @ApiModelProperty(name= "selectedItem", value= "selected Item",position = 7)
+    @ApiModelProperty(name= "imsLocation", value= "Ims Location",position = 7)
+    private String imsLocation;
+    @ApiModelProperty(name= "selectedItem", value= "selected Item",position = 8)
     private boolean selectedItem = false;
 }
 
