@@ -68,6 +68,19 @@ public class PropertyUtil {
     }
 
     /**
+     * Gets property value for the key and the institution and the ims location
+     * @param institution
+     * @param imsLocation
+     * @param propertyKey
+     * @return String
+     */
+    public String getPropertyByInstitutionAndLocationAndKey(String institution, String imsLocation, String propertyKey) {
+        JSONObject jsonObject = getPropertyByInstitution(institution);
+        JSONObject jsonLocationObject = jsonObject.getJSONObject(imsLocation);
+        return jsonLocationObject.get(propertyKey).toString();
+    }
+
+    /**
      * Gets Json object with all properties for the institution
      * @param institution
      * @return JSONObject
