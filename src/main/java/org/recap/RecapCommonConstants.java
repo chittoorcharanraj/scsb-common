@@ -287,5 +287,5 @@ public class RecapCommonConstants {
     public static final Boolean BOOLEAN_FALSE = false;
     //permissions
     public static final String ROLE_SUPER_ADMIN = "Super Admin";
-    public static final String ROLE_RECAP = "Super Admin";
+    public static final String ROLE_RECAP = "RECAP";
 }
