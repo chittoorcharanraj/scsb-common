@@ -56,4 +56,7 @@ public class BulkRequestItemAbstractEntity extends AbstractEntity<Integer> {
 
     @Column(name = "EMAIL_ID")
     private String emailId;
+
+    @Column(name = "IMS_LOCATION_ID")
+    private Integer imsLocation;
 }
