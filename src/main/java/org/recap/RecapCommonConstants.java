@@ -25,6 +25,7 @@ public class RecapCommonConstants {
     public static final String OLD_CGD = "oldCollectionGroupDesignation";
     public static final String NEW_CGD = "newCollectionGroupDesignation";
     public static final String CGD_CHANGE_NOTES = "cgdChangeNotes";
+    public  static  final String FAILURE_UPDATE_CGD = "Failure: User is not allowed to update other instituion Item";
     public static final String USER_NAME = "userName";
     public static final String REQUEST_EXCEPTION_REST = "RestClient : ";
     public static final String REQUEST_EXCEPTION = "Exception : ";
@@ -281,4 +282,10 @@ public class RecapCommonConstants {
 
     /* ActiveMQ Component Name */
     public static final String SCSB_ACTIVEMQ_COMPONENT_NAME = "scsbactivemq";
+    //Boolean
+    public static final Boolean BOOLEAN_TRUE = true;
+    public static final Boolean BOOLEAN_FALSE = false;
+    //permissions
+    public static final String ROLE_SUPER_ADMIN = "Super Admin";
+    public static final String ROLE_RECAP = "RECAP";
 }
