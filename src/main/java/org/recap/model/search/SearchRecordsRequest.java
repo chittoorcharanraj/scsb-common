@@ -36,16 +36,19 @@ public class SearchRecordsRequest implements Serializable {
     @ApiModelProperty(name= "useRestrictions", value= "Book Use Restrictions",position = 6, allowableValues = "NoRestrictions, InLibraryUse, SupervisedUse")
     private List<String> useRestrictions = null;
 
-    @ApiModelProperty(name= "isDeleted", value= "Is Deleted",position = 7)
+    @ApiModelProperty(name= "storageLocations", value= "Storage Locations",position = 7)
+    private List<String> storageLocations = null;
+
+    @ApiModelProperty(name= "isDeleted", value= "Is Deleted",position = 8)
     private boolean isDeleted = false;
 
-    @ApiModelProperty(name= "catalogingStatus", value= "Cataloging Status",position = 8, allowableValues = "Complete, Incomplete")
+    @ApiModelProperty(name= "catalogingStatus", value= "Cataloging Status",position = 9, allowableValues = "Complete, Incomplete")
     private String catalogingStatus;
 
-    @ApiModelProperty(name= "pageNumber", value= "Current Page Number",position = 9)
+    @ApiModelProperty(name= "pageNumber", value= "Current Page Number",position = 10)
     private Integer pageNumber = 0;
 
-    @ApiModelProperty(name= "pageSize", value= "Total records to show is page", position = 10)
+    @ApiModelProperty(name= "pageSize", value= "Total records to show is page", position = 11)
     private Integer pageSize = 10;
 
     /**
@@ -299,5 +302,24 @@ public class SearchRecordsRequest implements Serializable {
      */
     public void setPageSize(Integer pageSize) {
         this.pageSize = pageSize;
+    }
+
+    /**
+     *
+     * @return strorageLocations
+     */
+    public List<String> getStorageLocations() {
+        if(null == storageLocations) {
+            storageLocations = new ArrayList<>();
+        }
+        return storageLocations;
+    }
+
+    /**
+     * set the storage Locations
+     * @param storageLocations
+     */
+    public void setStorageLocations(List<String> storageLocations) {
+        this.storageLocations = storageLocations;
     }
 }
