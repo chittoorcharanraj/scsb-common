@@ -39,6 +39,10 @@ public class DeliveryCodeEntity extends AbstractEntity<Integer> implements Compa
     @JoinColumn(name = "IMS_LOCATION_ID", insertable = false, updatable = false)
     private ImsLocationEntity imsLocationEntity;
 
+    @Column(name = "CIRC_DESK_LOCATION")
+    private String pickupLocation;
+
+
     @Override
     public int compareTo(DeliveryCodeEntity deliveryCodeEntity) {
         if (null != this.getDescription() && null !=  deliveryCodeEntity && null != deliveryCodeEntity.getDescription()) {
