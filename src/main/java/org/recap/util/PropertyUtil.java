@@ -15,6 +15,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.HashMap;
 
 @RefreshScope
 @Service
@@ -81,6 +82,24 @@ public class PropertyUtil {
         JSONObject jsonObject = getPropertyByInstitution(institution, true);
         JSONObject jsonLocationObject = jsonObject.getJSONObject(imsLocation);
         return jsonLocationObject.get(propertyKey).toString();
+    }
+
+    /**
+     * Gets property value for the key for all the institutions
+     * @param propertyKey
+     * @return String
+     */
+    public Map<String, String> getPropertyByKeyForAllInstitutions(String propertyKey) {
+        Map<String, String> resultMap = new HashMap<>();
+        JSONObject json = new JSONObject(this.ilsConfigProperties);
+        Map<String, Object> institutionMap = json.toMap();
+        for (String institution : institutionMap.keySet()) {
+            JSONObject result = json.getJSONObject(institution);
+            if (result.has(propertyKey)) {
+                resultMap.put(institution.toUpperCase(), result.get(propertyKey).toString());
+            }
+        }
+        return resultMap;
     }
 
     /**
