@@ -37,7 +37,7 @@ public class SearchRecordsRequest implements Serializable {
     private List<String> useRestrictions = null;
 
     @ApiModelProperty(name= "storageLocations", value= "Storage Locations",position = 7)
-    private List<String> storageLocations = null;
+    private List<String> imsDepositoryCodes = null;
 
     @ApiModelProperty(name= "isDeleted", value= "Is Deleted",position = 8)
     private boolean isDeleted = false;
@@ -308,18 +308,18 @@ public class SearchRecordsRequest implements Serializable {
      *
      * @return strorageLocations
      */
-    public List<String> getStorageLocations() {
-        if(null == storageLocations) {
-            storageLocations = new ArrayList<>();
+    public List<String> getImsDepositoryCodes() {
+        if(null == imsDepositoryCodes) {
+            imsDepositoryCodes = new ArrayList<>();
         }
-        return storageLocations;
+        return imsDepositoryCodes;
     }
 
     /**
      * set the storage Locations
      * @param storageLocations
      */
-    public void setStorageLocations(List<String> storageLocations) {
-        this.storageLocations = storageLocations;
+    public void setImsDepositoryCodes(List<String> imsDepositoryCodes) {
+        this.imsDepositoryCodes = imsDepositoryCodes;
     }
 }
