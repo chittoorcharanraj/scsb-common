@@ -1,7 +1,7 @@
 
 package org.recap.model.jaxb.marc;
 
-import org.recap.RecapCommonConstants;
+import org.recap.ScsbCommonConstants;
 import org.recap.model.jaxb.JAXBContextHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,7 +47,7 @@ public class CollectionType implements Serializable {
     private static final Logger LOG = LoggerFactory.getLogger(CollectionType.class);
 
     @XmlAttribute(name="xmlns")
-    String xmlns = RecapCommonConstants.MARC_DATA_LOAD_NAMESPACE;
+    String xmlns = ScsbCommonConstants.MARC_DATA_LOAD_NAMESPACE;
     @XmlElement
     private List<RecordType> record;
     @XmlAttribute(name = "id")
