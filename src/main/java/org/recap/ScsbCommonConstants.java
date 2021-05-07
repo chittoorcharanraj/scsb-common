@@ -1,9 +1,8 @@
 package org.recap;
 
-public class RecapCommonConstants {
-    private RecapCommonConstants() {}
+public class ScsbCommonConstants {
+    private ScsbCommonConstants() {}
     public static final String API_KEY = "api_key";
-    public static final String RECAP = "recap";
     public static final String FAILURE = "Failure";
     public static final String SUCCESS = "Success";
     public static final String ITEM_BARCDE_DOESNOT_EXIST = "Item barcode doesn't exist in SCSB database.";

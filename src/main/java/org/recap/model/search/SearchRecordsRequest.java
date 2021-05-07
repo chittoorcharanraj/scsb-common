@@ -2,7 +2,7 @@ package org.recap.model.search;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.recap.RecapCommonConstants;
+import org.recap.ScsbCommonConstants;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ public class SearchRecordsRequest implements Serializable {
     @ApiModelProperty(name= "collectionGroupDesignations", value= "Collection Group Designations",position = 3, allowableValues="Shared, Open, Private")
     private List<String> collectionGroupDesignations = null;
 
-    @ApiModelProperty(name= "availability", value= "Availability of books in ReCAP",position = 4, allowableValues = "Available, NotAvailable")
+    @ApiModelProperty(name= "availability", value= "Availability of books in Storage Locations",position = 4, allowableValues = "Available, NotAvailable")
     private List<String> availability = null;
 
     @ApiModelProperty(name= "materialTypes", value= "Material Types",position = 5, allowableValues = "Serial, Monograph, Other")
@@ -67,7 +67,7 @@ public class SearchRecordsRequest implements Serializable {
         this.setFieldName("");
         this.setFieldValue("");
         this.setDeleted(false);
-        this.setCatalogingStatus(RecapCommonConstants.COMPLETE_STATUS);
+        this.setCatalogingStatus(ScsbCommonConstants.COMPLETE_STATUS);
 
         this.getCollectionGroupDesignations().add("Shared");
         this.getCollectionGroupDesignations().add("Private");

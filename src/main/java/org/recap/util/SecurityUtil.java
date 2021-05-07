@@ -1,6 +1,6 @@
 package org.recap.util;
 
-import org.recap.RecapCommonConstants;
+import org.recap.ScsbCommonConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -38,7 +38,7 @@ public class SecurityUtil {
             encryptedString = encoder.encodeToString(encrypted);
         } catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException |
                 IllegalBlockSizeException | BadPaddingException e) {
-            logger.error(RecapCommonConstants.LOG_ERROR,e);
+            logger.error(ScsbCommonConstants.LOG_ERROR,e);
         }
         logger.debug("encryptedString--->{}",encryptedString);
         return encryptedString;
@@ -57,7 +57,7 @@ public class SecurityUtil {
             decrypted = new String(cipher.doFinal(decoder.decode(encryptedValue)));
         } catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException |
                 IllegalBlockSizeException | BadPaddingException e) {
-            logger.error(RecapCommonConstants.LOG_ERROR,e);
+            logger.error(ScsbCommonConstants.LOG_ERROR,e);
         }
         logger.debug("decryptedString--->{}",decrypted);
         return decrypted;

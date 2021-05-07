@@ -1,6 +1,6 @@
 package org.recap.service;
 
-import org.recap.RecapCommonConstants;
+import org.recap.ScsbCommonConstants;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,10 +12,10 @@ import java.util.List;
 public class SCSBService {
     public boolean validateUserRoles(List<String> userRoles, String userCode, String itemCode) {
         for (String userRole : userRoles){
-            if(userRole.equalsIgnoreCase(RecapCommonConstants.ROLE_RECAP) || userRole.equalsIgnoreCase(RecapCommonConstants.ROLE_SUPER_ADMIN)
+            if(userRole.equalsIgnoreCase(ScsbCommonConstants.ROLE_RECAP) || userRole.equalsIgnoreCase(ScsbCommonConstants.ROLE_SUPER_ADMIN)
                     || userCode.equalsIgnoreCase(itemCode))
-                return RecapCommonConstants.BOOLEAN_TRUE;
+                return ScsbCommonConstants.BOOLEAN_TRUE;
         }
-        return RecapCommonConstants.BOOLEAN_FALSE;
+        return ScsbCommonConstants.BOOLEAN_FALSE;
     }
 }
