@@ -288,8 +288,4 @@ public class ScsbCommonConstants {
     public static final String ROLE_SUPER_ADMIN = "Super Admin";
     public static final String ROLE_RECAP = "RECAP";
 
-    /* Property Keys */
-    public static final String KEY_ILS_ENABLE_CIRCULATION_FREEZE = "ils.enable.circulation.freeze";
-    public static final String KEY_ILS_CIRCULATION_FREEZE_MESSAGE = "ils.circulation.freeze.message";
-
 }
