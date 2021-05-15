@@ -5,6 +5,9 @@ package org.recap;
  */
 public class PropertyKeyConstants {
 
+    private PropertyKeyConstants() {
+    }
+
     /* General Property Keys */
     public static final String VERSION_NUMBER = "version.number";
 
