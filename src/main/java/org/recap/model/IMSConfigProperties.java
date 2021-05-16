@@ -3,6 +3,7 @@ package org.recap.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import lombok.Data;
+import org.recap.PropertyKeyConstants;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,67 +14,75 @@ import org.springframework.stereotype.Component;
 @Component
 public class IMSConfigProperties {
 
-    @SerializedName("las.use.queue")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_USE_QUEUE)
     @Expose
-    public String lasUseQueue;
+    public String imsUseQueue;
 
-    @SerializedName("las.server.status.endpoint")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_SERVER_STATUS_ENDPOINT)
     @Expose
-    public String lasServerStatusEndpoint;
+    public String imsServerStatusEndpoint;
 
-    @SerializedName("las.item.status.endpoint")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_ITEM_STATUS_ENDPOINT)
     @Expose
-    public String lasItemStatusEndpoint;
+    public String imsItemStatusEndpoint;
 
-    @SerializedName("las.item.permanent.withdrawal.direct.endpoint")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_ITEM_PERMANENT_WITHDRAWAL_DIRECT_ENDPOINT)
     @Expose
-    public String lasPermanentWithdrawalDirectEndpoint;
+    public String imsPermanentWithdrawalDirectEndpoint;
 
-    @SerializedName("las.item.permanent.withdrawal.indirect.endpoint")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_ITEM_PERMANENT_WITHDRAWAL_INDIRECT_ENDPOINT)
     @Expose
-    public String lasPermanentWithdrawalIndirectEndpoint;
+    public String imsPermanentWithdrawalIndirectEndpoint;
 
-    @SerializedName("las.item.retrieval.order.endpoint")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_ITEM_RETRIEVAL_ORDER_ENDPOINT)
     @Expose
-    public String lasItemRetrievalOrderEndpoint;
+    public String imsItemRetrievalOrderEndpoint;
 
-    @SerializedName("las.item.edd.order.endpoint")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_ITEM_EDD_ORDER_ENDPOINT)
     @Expose
-    public String lasItemEddOrderEndpoint;
+    public String imsItemEddOrderEndpoint;
 
-    @SerializedName("las.server.response.timeout.milliseconds")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_SERVER_RESPONSE_TIMEOUT_MILLISECONDS)
     @Expose
-    public String lasServerResponseTimeoutMillis;
+    public String imsServerResponseTimeoutMillis;
 
-    @SerializedName("las.polling.time.interval")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_POLLING_TIME_INTERVAL)
     @Expose
-    public String lasPollingTimeInterval;
+    public String imsPollingTimeInterval;
 
-    @SerializedName("las.email.request.cancel.to")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_EMAIL_REQUEST_CANCEL_TO)
     @Expose
-    public String lasEmailRequestCancelTo;
+    public String imsEmailRequestCancelTo;
 
-    @SerializedName("las.email.request.refile.to")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_EMAIL_REQUEST_REFILE_TO)
     @Expose
-    public String lasEmailRequestRefileTo;
+    public String imsEmailRequestRefileTo;
 
-    @SerializedName("las.email.request.recall.cc")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_EMAIL_REQUEST_RECALL_CC)
     @Expose
-    public String lasEmailRequestRecallCc;
+    public String imsEmailRequestRecallCc;
 
-    @SerializedName("las.email.assist.to")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_EMAIL_ASSIST_TO)
     @Expose
-    public String lasEmailAssistTo;
+    public String imsEmailAssistTo;
 
-    @SerializedName("las.email.daily.reconciliation.to")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_EMAIL_DAILY_RECONCILIATION_TO)
     @Expose
-    public String lasEmailDailyReconciliationTo;
+    public String imsEmailDailyReconciliationTo;
 
-    @SerializedName("las.email.status.reconciliation.to")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_EMAIL_STATUS_RECONCILIATION_TO)
     @Expose
-    public String lasEmailStatusReconciliationTo;
+    public String imsEmailStatusReconciliationTo;
 
-    @SerializedName("las.email.status.reconciliation.cc")
+    @SerializedName(PropertyKeyConstants.IMS.IMS_EMAIL_STATUS_RECONCILIATION_CC)
     @Expose
-    public String lasEmailStatusReconciliationCc;
+    public String imsEmailStatusReconciliationCc;
+
+    @SerializedName(PropertyKeyConstants.IMS.IMS_AVAILABLE_ITEM_STATUS_CODES)
+    @Expose
+    public String imsAvailableItemStatusCodes;
+
+    @SerializedName(PropertyKeyConstants.IMS.IMS_NOT_AVAILABLE_ITEM_STATUS_CODES)
+    @Expose
+    public String imsNotAvailableItemStatusCodes;
 }

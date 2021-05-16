@@ -4,281 +4,227 @@ package org.recap.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import lombok.Data;
+import org.recap.PropertyKeyConstants;
 import org.springframework.stereotype.Component;
 
 @Data
 @Component
 public class ILSConfigProperties {
     /* ILS Connection Properties */
-    @SerializedName("ils.server")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_SERVER)
     @Expose
     public String host;
-    @SerializedName("ils.server.port")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_SERVER_PORT)
     @Expose
     public int port;
-    @SerializedName("ils.server.operator.user.id")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_SERVER_OPERATOR_USER_ID)
     @Expose
     public String operatorUserId;
-    @SerializedName("ils.server.operator.password")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_SERVER_OPERATOR_PASSWORD)
     @Expose
     public String operatorPassword;
-    @SerializedName("ils.server.operator.location")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_SERVER_OPERATOR_LOCATION)
     @Expose
     public String operatorLocation;
-    @SerializedName("ils.protocol")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_PROTOCOL)
     @Expose
     public String protocol;
-
-/*
-    @SerializedName("ftp.submit.collection.cgdprotected.dir")
-    @Expose
-    public String ftpSubmitCollectionCgdprotectedDir;
-    @SerializedName("auth.service.logout")
-    @Expose
-    public String authServiceLogout;
-
-
-    @SerializedName("ils.nypl.cross.partner.patron.id")
-    @Expose
-    public String ilsNyplCrossPartnerPatronId;
-    @SerializedName("ils.pul.edd.patron.id")
-    @Expose
-    public String ilsPulEddPatronId;
-    @SerializedName("ils.cul.edd.patron.id")
-    @Expose
-    public String ilsCulEddPatronId;
-    @SerializedName("ftp.accession.reconciliation.processed.dir")
-    @Expose
-    public String ftpAccessionReconciliationProcessedDir;
-    @SerializedName("ftp.submit.collection.report.dir")
-    @Expose
-    public String ftpSubmitCollectionReportDir;
-    @SerializedName("ils.edd.patron.id")
-    @Expose
-    public String ilsEddPatronId;
-    @SerializedName("accession.reconciliation.workdir")
-    @Expose
-    public String accessionReconciliationWorkdir;
-    @SerializedName("auth.type")
-    @Expose
-    public String authType;
-    @SerializedName("ftp.accession.reconciliation.dir")
-    @Expose
-    public String ftpAccessionReconciliationDir;
-    @SerializedName("auth.service.login")
-    @Expose
-    public String authServiceLogin;
-    @SerializedName("submit.collection.fileprocess.workdir")
-    @Expose
-    public String submitCollectionFileprocessWorkdir;
-    @SerializedName("auth.service.prefix")
-    @Expose
-    public String authServicePrefix;
-    @SerializedName("email.recall.request.to")
-    @Expose
-    public String emailRecallRequestTo;
-
-
-    @SerializedName("ils.pul.cross.partner.patron.id")
-    @Expose
-    public String ilsPulCrossPartnerPatronId;
-    @SerializedName("ils.cul.cross.partner.patron.id")
-    @Expose
-    public String ilsCulCrossPartnerPatronId;
-    @SerializedName("ftp.submit.collection.cgdnotprotected.dir")
-    @Expose
-    public String ftpSubmitCollectionCgdnotprotectedDir;
-    @SerializedName("ils.nypl.edd.patron.id")
-    @Expose
-    public String ilsNyplEddPatronId;  */
 
     /* ILS General Properties */
 
     /* Matching Algo Reports Properties */
-    @SerializedName("email.matching.reports.to")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_MATCHING_REPORTS_TO)
     @Expose
     public String emailMatchingReportsTo;
 
     /* Accession Properties */
-    @SerializedName("email.accession.reconciliation.cc")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_ACCESSION_RECONCILIATION_CC)
     @Expose
     public String emailAccessionReconciliationCc;
-    @SerializedName("email.accession.reports.to")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_ACCESSION_REPORTS_TO)
     @Expose
     public String emailAccessionReportsTo;
-    @SerializedName("email.accession.reconciliation.to")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_ACCESSION_RECONCILIATION_TO)
     @Expose
     public String emailAccessionReconciliationTo;
 
     /* Submit Collection Properties */
-    @SerializedName("email.submit.collection.to")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_SUBMIT_COLLECTION_TO)
     @Expose
     public String emailSubmitCollectionTo;
-    @SerializedName("email.submit.collection.cc")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_SUBMIT_COLLECTION_CC)
     @Expose
     public String emailSubmitCollectionCc;
 
     /* Data Dump Properties */
-    @SerializedName("email.data.dump.to")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_DATA_DUMP_TO)
     @Expose
     public String emailDataDumpTo;
-    @SerializedName("email.data.dump.cc")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_DATA_DUMP_CC)
     @Expose
     public String emailDataDumpCc;
 
-    @SerializedName("datadump.marc")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_DATA_DUMP_MARC)
     @Expose
     public String datadumpMarc;
 
     /* Email Request Properties */
-    @SerializedName("email.recall.request.to")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_RECALL_REQUEST_TO)
     @Expose
     public String emailRecallRequestTo;
-    @SerializedName("email.request.recall.cc")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_REQUEST_RECALL_CC)
     @Expose
     public String emailRequestRecallCc;
-    @SerializedName("email.request.initial.load.to")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_REQUEST_INITIAL_LOAD_TO)
     @Expose
     public String emailRequestInitialLoadTo;
-    @SerializedName("email.request.refile.to")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_REQUEST_REFILE_TO)
     @Expose
     public String emailRequestRefileTo;
 
     /* Other Email Properties */
-    @SerializedName("email.admin.role.to")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_ADMIN_ROLE_TO)
     @Expose
     public String emailAdminRoleTo;
-    @SerializedName("email.technical.support.to")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_EMAIL_TECHNICAL_SUPPORT_TO)
     @Expose
     public String emailTechnicalSupportTo;
 
     /* ILS OAuth Properties */
-    @SerializedName("oauth2.client.clientid")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_OAUTH2_CLIENT_CLIENT_ID)
     @Expose
     public String oauth2ClientClientid;
-    @SerializedName("oauth2.client.clientSecret")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_OAUTH2_CLIENT_CLIENT_SECRET)
     @Expose
     public String oauth2ClientClientSecret;
-    @SerializedName("oauth2.client.registered-redirect-uri")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_OAUTH2_CLIENT_REGISTERED_REDIRECT_URI)
     @Expose
     public String oauth2ClientRegisteredRedirectUri;
-    @SerializedName("oauth2.resource.jwt.key-value")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_OAUTH2_RESOURCE_JWT_KEY_VALUE)
     @Expose
     public String oauth2ResourceJwtKeyValue;
-    @SerializedName("oauth2.client.scope")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_OAUTH2_CLIENT_SCOPE)
     @Expose
     public String oauth2ClientScope;
-    @SerializedName("oauth2.client.pre-established-redirect-uri")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_OAUTH2_CLIENT_PRE_ESTABLISHED_REDIRECT_URI)
     @Expose
     public String oauth2ClientPreEstablishedRedirectUri;
-    @SerializedName("oauth.resource.jwt.key-value")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_OAUTH_RESOURCE_JWT_KEY_VALUE)
     @Expose
     public String oauthResourceJwtKeyValue;
-    @SerializedName("oauth.token.api.url")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_OAUTH_TOKEN_API_URL)
     @Expose
     public String oauthTokenApiUrl;
 
     /* ILS Rest Properties */
-    @SerializedName("ils.rest.data.api")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_REST_DATA_API)
     @Expose
     public String ilsRestDataApi;
-    @SerializedName("ils.rest.polling.max.timeout")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_REST_POLLING_MAX_TIMEOUT)
     @Expose
     public String ilsRestPollingMaxTimeout;
-    @SerializedName("ils.bibdata.api.parameter")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_BIB_DATA_API_PARAMETER)
     @Expose
     public String ilsBibdataApiParameter;
-    @SerializedName("ils.bibdata.api.endpoint")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_BIB_DATA_API_ENDPOINT)
     @Expose
     public String ilsBibdataApiEndpoint;
-    @SerializedName("ils.bibdata.api.auth")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_BIB_DATA_API_AUTH)
     @Expose
     public String ilsBibdataApiAuth;
-    @SerializedName("bibdata.format")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_BIB_DATA_FORMAT)
     @Expose
     public String bibDataFormat;
-    @SerializedName("ils.refile.endpoint.protocol")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_REFILE_ENDPOINT_PROTOCOL)
     @Expose
     public String ilsRefileEndpointProtocol;
 
-    @SerializedName("submitCollection.protected.ftpDir")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_SUBMIT_COLLECTION_PROTECTED_FTP_DIR)
     @Expose
     public String submitCollectionProtectedFtpDir;
 
-    @SerializedName("submitCollection.protected.localDir")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_SUBMIT_COLLECTION_PROTECTED_LOCAL_DIR)
     @Expose
     public String submitCollectionProtectedLocalDir;
 
-    @SerializedName("submitCollection.notProtected.ftpDir")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_SUBMIT_COLLECTION_NOT_PROTECTED_FTP_DIR)
     @Expose
     public String submitCollectionNotProtectedFtpDir;
 
-    @SerializedName("submitCollection.notProtected.localDir")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_SUBMIT_COLLECTION_NOT_PROTECTED_LOCAL_DIR)
     @Expose
     public String submitCollectionNotProtectedLocalDir;
 
-    @SerializedName("ftp.accession.reconciliation.dir")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_FTP_ACCESSION_RECONCILIATION_DIR)
     @Expose
     public String ftpAccessionReconciliationDir;
 
-    @SerializedName("ftp.accession.reconciliation.processed.dir")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_FTP_ACCESSION_RECONCILIATION_PROCESSED_DIR)
     @Expose
     public String ftpAccessionReconciliationProcessedDir;
 
-    @SerializedName("accession.reconciliation.filePath")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_ACCESSION_RECONCILIATION_FILE_PATH)
     @Expose
     public String accessionReconciliationFilepath;
 
-    @SerializedName("accession.reconciliation.workdir")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_ACCESSION_RECONCILIATION_WORK_DIR)
     @Expose
     public String accessionReconciliationWorkdir;
 
-    @SerializedName("accession.reconciliation.ftp.routeId")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_ACCESSION_RECONCILIATION_FTP_ROUTE_ID)
     @Expose
     public String accessionReconciliationFtpRouteId;
 
-    @SerializedName("accession.reconciliation.direct.routeId")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_ACCESSION_RECONCILIATION_DIRECT_ROUTE_ID)
     @Expose
     public String accessionReconciliationDirectRouteId;
 
-    @SerializedName("etl.incremental.dump")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_ETL_INCREMENTAL_DUMP)
     @Expose
     public String etlIncrementalDump;
 
-    @SerializedName("etl.deleted.dump")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_ETL_DELETED_DUMP)
     @Expose
     public String etlDeletedDump;
 
-    @SerializedName("etl.initial.data.loaded.date")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_ETL_INITIAL_DATA_LOADED_DATE)
     @Expose
     public String etlInitialDataLoadedDate;
 
-    @SerializedName("ftp.request.initial.accession.dir")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_FTP_REQUEST_INITIAL_ACCESSION_DIR)
     @Expose
     public String ftpRequestInitialAccessionDir;
 
-    @SerializedName("ftp.request.initial.accession.error.file")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_FTP_REQUEST_INITIAL_ACCESSION_ERROR_FILE)
     @Expose
     public String ftpRequestInitialAccessionErrorFile;
 
-    @SerializedName("request.initial.load.workdir")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_REQUEST_INITIAL_LOAD_WORK_DIR)
     @Expose
     public String requestInitialLoadWorkdir;
 
-    @SerializedName("request.initial.load.filepath")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_REQUEST_INITIAL_LOAD_FILE_PATH)
     @Expose
     public String requestInitialLoadFilepath;
 
-    @SerializedName("ils.agency.id")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_AGENCY_ID)
     @Expose
     public String ncipAgencyId;
 
-    @SerializedName("ils.scheme")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_SCHEME)
     @Expose
     public String ncipScheme;
 
-    @SerializedName("ils.api.key")
+    @SerializedName(PropertyKeyConstants.ILS.ILS_API_KEY)
     @Expose
     public String ilsApiKey;
+
+    @SerializedName(PropertyKeyConstants.ILS.ILS_ENABLE_CIRCULATION_FREEZE)
+    @Expose
+    public String ilsEnableCirculationFreeze;
+
+    @SerializedName(PropertyKeyConstants.ILS.ILS_CIRCULATION_FREEZE_MESSAGE)
+    @Expose
+    public String ilsCirculationFreezeMessage;
 
 }
