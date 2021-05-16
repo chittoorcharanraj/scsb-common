@@ -3,7 +3,9 @@ package org.recap.service;
 import org.recap.ScsbCommonConstants;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author dinakar on 01/05/21
@@ -17,5 +19,13 @@ public class SCSBService {
                 return ScsbCommonConstants.BOOLEAN_TRUE;
         }
         return ScsbCommonConstants.BOOLEAN_FALSE;
+    }
+    public List<Integer> getKeysByValues(List<String> values, Map<Integer, String> map) {
+        List<Integer> listKeys = new ArrayList<>();
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            if(values.stream().anyMatch(entry.getValue()::equalsIgnoreCase))
+                listKeys.add(entry.getKey());
+        }
+        return listKeys;
     }
 }
