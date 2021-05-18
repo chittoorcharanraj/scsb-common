@@ -42,6 +42,10 @@ public class DeliveryCodeEntity extends AbstractEntity<Integer> implements Compa
     @Column(name = "CIRC_DESK_LOCATION")
     private String pickupLocation;
 
+    @Column(name = "ACTIVE")
+    private String active;
+
+
 
     @Override
     public int compareTo(DeliveryCodeEntity deliveryCodeEntity) {
