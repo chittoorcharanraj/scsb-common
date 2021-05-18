@@ -22,7 +22,7 @@ import java.util.List;
  * Created by peris on 8/10/16.
  */
 @Entity
-@Table(name = "REPORT_T", schema = "RECAP", catalog = "")
+@Table(name = "REPORT_T", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "RECORD_NUM"))
 @Getter
 @Setter

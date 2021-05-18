@@ -18,7 +18,7 @@ import javax.persistence.CascadeType;
 @Getter
 @Setter
 @Entity
-@Table(name = "bulk_customer_code_t", schema = "recap", catalog = "")
+@Table(name = "bulk_customer_code_t", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "BULK_CUSTOMER_CODE_ID"))
 public class BulkCustomerCodeEntity extends AbstractEntity<Integer> {
 

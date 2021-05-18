@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "DELIVERY_CODES_T", schema = "recap", catalog = "")
+@Table(name = "DELIVERY_CODES_T", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "DELIVERY_CODE_ID"))
 @Getter
 @Setter

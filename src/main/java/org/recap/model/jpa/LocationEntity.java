@@ -10,7 +10,7 @@ import java.util.Date;
  * Created by pvsubrah on 6/11/16.
  */
 @Entity
-@Table(name = "ims_location_t", schema = "recap", catalog = "")
+@Table(name = "ims_location_t", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "LOCATION_ID"))
 @Getter
 @Setter
