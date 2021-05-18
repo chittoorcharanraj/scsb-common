@@ -33,6 +33,7 @@ public class ScsbCommonConstants {
     public static final String COMPLETE_STATUS = "Complete";
     public static final String REQUEST_MESSAGE_RECEVIED = "Message received, your request will be processed";
     public static final String PURGE_EXCEPTION_REQUESTS = "PurgeExceptionRequests";
+    public static final String GENERATE_ACCESSION_REPORT_JOB = "GenerateAccessionReport";
     public static final String STATUS = "Status";
     public static final String PATH_SEPARATOR = "/";
     public static final String PROCESSSED_RECORDS = "processedRecords";
