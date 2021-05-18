@@ -43,7 +43,7 @@ public class DeliveryCodeEntity extends AbstractEntity<Integer> implements Compa
     private String pickupLocation;
 
     @Column(name = "ACTIVE")
-    private String active;
+    private char active;
 
 
 
