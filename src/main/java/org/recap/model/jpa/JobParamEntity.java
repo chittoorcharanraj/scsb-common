@@ -17,7 +17,7 @@ import java.util.List;
  * Created by rajeshbabuk on 29/6/17.
  */
 @Entity
-@Table(name = "JOB_PARAM_T", schema = "recap", catalog = "recap")
+@Table(name = "JOB_PARAM_T")
 @AttributeOverride(name = "id", column = @Column(name = "RECORD_NUM"))
 @Getter
 @Setter

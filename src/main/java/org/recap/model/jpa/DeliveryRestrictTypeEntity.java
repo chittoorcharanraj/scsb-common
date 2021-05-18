@@ -10,7 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "DELIVERY_RESTRICT_TYPE_T", schema = "recap", catalog = "")
+@Table(name = "DELIVERY_RESTRICT_TYPE_T", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "DEL_RESTRICT_TYPE_ID"))
 @EqualsAndHashCode(callSuper = false)
 @Getter
