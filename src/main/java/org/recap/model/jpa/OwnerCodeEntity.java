@@ -26,6 +26,10 @@ public class OwnerCodeEntity extends AbstractEntity<Integer> {
     @Column(name = "IMS_LOCATION_ID")
     private Integer imsLocationId;
 
+    @Column(name = "ACTIVE")
+    private String active;
+
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "INSTITUTION_ID", insertable = false, updatable = false)
     private InstitutionEntity institutionEntity;
