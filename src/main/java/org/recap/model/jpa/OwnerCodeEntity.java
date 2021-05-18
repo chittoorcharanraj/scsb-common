@@ -27,7 +27,7 @@ public class OwnerCodeEntity extends AbstractEntity<Integer> {
     private Integer imsLocationId;
 
     @Column(name = "ACTIVE")
-    private String active;
+    private char active;
 
 
     @ManyToOne(cascade = CascadeType.ALL)
