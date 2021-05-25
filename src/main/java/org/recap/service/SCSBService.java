@@ -1,6 +1,7 @@
 package org.recap.service;
 
 import org.recap.ScsbCommonConstants;
+import org.recap.model.jpa.CollectionGroupEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -27,5 +28,13 @@ public class SCSBService {
                 listKeys.add(entry.getKey());
         }
         return listKeys;
+    }
+    public List<String> pullCGDCodesList(List<CollectionGroupEntity> collectionGroupEntities){
+        List<String> cgdCodesList = new ArrayList<>();
+        for (CollectionGroupEntity collectionGroupEntity : collectionGroupEntities){
+            if(!collectionGroupEntity.getCollectionGroupCode().equalsIgnoreCase(ScsbCommonConstants.NA))
+                cgdCodesList.add(collectionGroupEntity.getCollectionGroupCode());
+        }
+        return cgdCodesList;
     }
 }
