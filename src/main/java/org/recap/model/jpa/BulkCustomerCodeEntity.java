@@ -31,6 +31,13 @@ public class BulkCustomerCodeEntity extends AbstractEntity<Integer> {
     @Column(name = "OWNING_INST_ID")
     private Integer owningInstitutionId;
 
+    @Column(name = "IMS_LOCATION_ID")
+    private Integer imsLocationId;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "IMS_LOCATION_ID", insertable = false, updatable = false)
+    private ImsLocationEntity imsLocationEntity;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "OWNING_INST_ID", insertable = false, updatable = false)
     private InstitutionEntity institutionEntity;
