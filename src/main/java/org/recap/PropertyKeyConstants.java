@@ -262,6 +262,10 @@ public class PropertyKeyConstants {
         public static final String ILS_CREATE_BIB_API_ENABLED = "ils.create.bib.api.enabled";
         public static final String ILS_CHECKIN_INSTITUTION = "ils.checkin.institution";
         public static final String ILS_BIBDATA_FORMAT= "bibdata.format";
+        public static final String ILS_EMAIL_LAS_EXCEPTION_TO = "email.las.exception.to";
+        public static final String ILS_EMAIL_LAS_EXCEPTION_CC = "email.las.exception.cc";
+        public static final String ILS_RECALL_FUNCTIONALITY_AVAILABLE = "ils.recall.functionality.available";
+
     }
 
     /* IMS Property Keys */
