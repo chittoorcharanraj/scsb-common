@@ -13,6 +13,7 @@ public class SubmitCollectionResultsRow {
     private String owningInstitution;
     private String reportType;
     private String message;
+    private String createdDate;
 
 }
 
