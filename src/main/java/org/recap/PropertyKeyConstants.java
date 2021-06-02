@@ -41,6 +41,7 @@ public class PropertyKeyConstants {
     public static final String SCSB_SUPPORT_INSTITUTION = "scsb.support.institution";
     public static final String SCSB_SWAGGER_API_KEY = "scsb.swagger.api.key";
     public static final String SCSB_EMAIL_ASSIST_TO = "scsb.email.assist.to";
+    public static final String SCSB_CGD_REPORT_MAIL_SUBJECT = "scsb.cgd.report.mail.subject";
 
     public static final String CAS_DEFAULT_URL_PREFIX = "cas.default.url.prefix";
     public static final String CAS_DEFAULT_SERVICE_LOGOUT = "cas.default.service.logout";
