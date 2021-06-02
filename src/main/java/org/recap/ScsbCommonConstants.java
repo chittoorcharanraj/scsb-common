@@ -213,6 +213,8 @@ public class ScsbCommonConstants {
     public static final String REPORTS_OPEN = "Open";
     public static final String REPORTS_PRIVATE = "Private";
     public static final String REPORTS_SHARED = "Shared";
+    public static final String REPORTS_COMMITTED = "Committed";
+    public static final String REPORTS_UNCOMMITTABLE = "Uncommittable";
     public static final String RETRIEVAL = "RETRIEVAL";
     public static final String RECALL = "RECALL";
     public static final String EDD = "EDD";
@@ -287,6 +289,6 @@ public class ScsbCommonConstants {
     public static final Boolean BOOLEAN_FALSE = false;
     //permissions
     public static final String ROLE_SUPER_ADMIN = "Super Admin";
-    public static final String ROLE_RECAP = "RECAP";
+    public static final String ROLE_RECAP = "Repository";
 
 }

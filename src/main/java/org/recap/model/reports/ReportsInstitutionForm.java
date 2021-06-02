@@ -30,5 +30,7 @@ public class ReportsInstitutionForm {
     private long openCgdCount;
     private long sharedCgdCount;
     private long privateCgdCount;
+    private long committedCgdCount;
+    private long uncommittableCgdCount;
     private long totalCgdCount;
 }
