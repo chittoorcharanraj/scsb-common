@@ -10,7 +10,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class SubmitCollectionReprot {
+public class SubmitCollectionReport {
     private Integer pageNumber;
     private Integer pageSize;
     private Long totalRecordsCount;
