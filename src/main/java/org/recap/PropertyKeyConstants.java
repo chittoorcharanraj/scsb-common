@@ -266,8 +266,9 @@ public class PropertyKeyConstants {
         public static final String ILS_EMAIL_LAS_EXCEPTION_TO = "email.las.exception.to";
         public static final String ILS_EMAIL_LAS_EXCEPTION_CC = "email.las.exception.cc";
         public static final String ILS_RECALL_FUNCTIONALITY_AVAILABLE = "ils.recall.functionality.available";
-        public static final String ILS_EMAIL_ONLY_INSTITUTION = "ils.email.only.institution";
-
+        public static final String LAS_EXCEPTION_EMAIL_ONLY = "las.exception.email.only";
+        public static final String ILS_RESTRICTED_ACCEPT_ITEM_AGENCY_ID = "ils.restricted.accept.item.agency.id";
+        public static final String ILS_UNRESTRICTED_ACCEPT_ITEM_AGENCY_ID = "ils.unrestricted.accept.item.agency.id";
     }
 
     /* IMS Property Keys */
