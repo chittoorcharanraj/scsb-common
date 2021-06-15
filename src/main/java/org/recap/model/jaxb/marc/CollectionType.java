@@ -41,15 +41,17 @@ import java.util.List;
         "record"
 })
 
-@XmlRootElement(name = "collection")
+@XmlRootElement(name = "collection", namespace = ScsbCommonConstants.MARC_DATA_LOAD_NAMESPACE)
 public class CollectionType implements Serializable {
 
     private static final Logger LOG = LoggerFactory.getLogger(CollectionType.class);
 
     @XmlAttribute(name="xmlns")
     String xmlns = ScsbCommonConstants.MARC_DATA_LOAD_NAMESPACE;
+
     @XmlElement
     private List<RecordType> record;
+
     @XmlAttribute(name = "id")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlID
