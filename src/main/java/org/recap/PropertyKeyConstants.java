@@ -171,6 +171,9 @@ public class PropertyKeyConstants {
     public static final String PURGE_ACCESSION_REQUEST_DAY_LIMIT = "purge.accession.request.day.limit";
     public static final String TRANSFER_API_NONHOLDINGID_INSTITUTION = "transfer.api.nonholdingid.institution";
 
+    public static final String IS_GFA_CHECK_REQ_FOR_REQUEST_INITIAL_LOAD = "request.initial.load.verify.ims.status";
+    public static final String IS_SOLR_INDEX_REQ_FOR_REQUEST_INITIAL_LOAD = "request.initial.load.perform.solr.index";
+
     /* ILS Property Keys */
     public static class ILS {
         private ILS() {
