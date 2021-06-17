@@ -41,7 +41,7 @@ import java.util.List;
         "record"
 })
 
-@XmlRootElement(name = "collection", namespace = ScsbCommonConstants.MARC_DATA_LOAD_NAMESPACE)
+@XmlRootElement(name = "collection")
 public class CollectionType implements Serializable {
 
     private static final Logger LOG = LoggerFactory.getLogger(CollectionType.class);
