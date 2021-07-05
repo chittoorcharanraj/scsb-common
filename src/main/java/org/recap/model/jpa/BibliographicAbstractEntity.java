@@ -54,6 +54,9 @@ public class BibliographicAbstractEntity extends AbstractEntity<Integer> impleme
     @Column(name = "CATALOGING_STATUS")
     private String catalogingStatus;
 
+    @Column(name = "MATCHING_IDENTITY")
+    private String matchingIdentity;
+
     public byte[] getContent() {
         return content;
     }
