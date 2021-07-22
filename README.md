@@ -15,4 +15,4 @@
 
 ./gradlew clean build -x test -DarchiveVersion=${VersionNumber} 
 
-- Move the Geenerated Jar file to  **/data/commonjar/**
+- Move the Generated Jar file to  **/data/commonjar/**
