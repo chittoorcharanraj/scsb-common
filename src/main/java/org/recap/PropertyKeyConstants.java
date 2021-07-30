@@ -174,6 +174,10 @@ public class PropertyKeyConstants {
     public static final String IS_GFA_CHECK_REQ_FOR_REQUEST_INITIAL_LOAD = "request.initial.load.verify.ims.status";
     public static final String IS_SOLR_INDEX_REQ_FOR_REQUEST_INITIAL_LOAD = "request.initial.load.perform.solr.index";
 
+    public static final String SUBMIT_COLLECTION_SOLR_PARTIAL_INDEX_THREAD_SIZE = "submit.collection.solr.partial.index.thread.size";
+    public static final String SUBMIT_COLLECTION_SOLR_PARTIAL_INDEX_DOCS_SIZE = "submit.collection.solr.partial.index.docs.size";
+    public static final String SUBMIT_COLLECTION_USE_SOLR_PARTIAL_INDEX_TOTAL_DOCS_SIZE = "submit.collection.use.solr.partial.index.docs.size";
+
     /* ILS Property Keys */
     public static class ILS {
         private ILS() {
