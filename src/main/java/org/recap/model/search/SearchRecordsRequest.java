@@ -33,22 +33,25 @@ public class SearchRecordsRequest implements Serializable {
     @ApiModelProperty(name= "materialTypes", value= "Material Types",position = 5, allowableValues = "Serial, Monograph, Other")
     private List<String> materialTypes = null;
 
-    @ApiModelProperty(name= "useRestrictions", value= "Book Use Restrictions",position = 6, allowableValues = "NoRestrictions, InLibraryUse, SupervisedUse")
+    @ApiModelProperty(name= "titleMatch", value= "Title Matches",position = 6, allowableValues = "Matched, Not Matched")
+    private List<String> titleMatch = null;
+
+    @ApiModelProperty(name= "useRestrictions", value= "Book Use Restrictions",position = 7, allowableValues = "NoRestrictions, InLibraryUse, SupervisedUse")
     private List<String> useRestrictions = null;
 
-    @ApiModelProperty(name= "storageLocations", value= "Storage Locations",position = 7)
+    @ApiModelProperty(name= "storageLocations", value= "Storage Locations",position = 8)
     private List<String> imsDepositoryCodes = null;
 
-    @ApiModelProperty(name= "isDeleted", value= "Is Deleted",position = 8)
+    @ApiModelProperty(name= "isDeleted", value= "Is Deleted",position = 9)
     private boolean isDeleted = false;
 
-    @ApiModelProperty(name= "catalogingStatus", value= "Cataloging Status",position = 9, allowableValues = "Complete, Incomplete")
+    @ApiModelProperty(name= "catalogingStatus", value= "Cataloging Status",position = 10, allowableValues = "Complete, Incomplete")
     private String catalogingStatus;
 
-    @ApiModelProperty(name= "pageNumber", value= "Current Page Number",position = 10)
+    @ApiModelProperty(name= "pageNumber", value= "Current Page Number",position = 11)
     private Integer pageNumber = 0;
 
-    @ApiModelProperty(name= "pageSize", value= "Total records to show is page", position = 11)
+    @ApiModelProperty(name= "pageSize", value= "Total records to show is page", position = 12)
     private Integer pageSize = 10;
 
     /**
@@ -321,5 +324,16 @@ public class SearchRecordsRequest implements Serializable {
      */
     public void setImsDepositoryCodes(List<String> imsDepositoryCodes) {
         this.imsDepositoryCodes = imsDepositoryCodes;
+    }
+
+    public List<String> getTitleMatch() {
+        if(null == titleMatch) {
+            titleMatch = new ArrayList<>();
+        }
+        return titleMatch;
+    }
+
+    public void setTitleMatch(List<String> titleMatch) {
+        this.titleMatch = titleMatch;
     }
 }
