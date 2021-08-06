@@ -217,6 +217,9 @@ public class PropertyKeyConstants {
         public static final String ILS_EMAIL_PAYLOAD_TO = "header.emailPayLoad.to";
         public static final String ILS_EMAIL_PAYLOAD_CC = "header.emailPayLoad.cc";
         public static final String ILS_EMAIL_PAYLOAD_SUBJECT = "header.emailPayLoad.subject";
+        public static final String ILS_EMAIL_MATCHING_CGD_REPORTS_TO = "email.matching.cgd.reports.to";
+        public static final String ILS_EMAIL_MATCHING_CGD_REPORTS_CC = "email.matching.cgd.reports.cc";
+
         /* Other ILS Keys */
         public static final String ILS_DATA_DUMP_MARC = "datadump.marc";
         public static final String ILS_REST_DATA_API = "ils.rest.data.api";
