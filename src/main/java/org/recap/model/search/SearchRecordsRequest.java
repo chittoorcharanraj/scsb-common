@@ -12,7 +12,7 @@ import java.util.List;
  * Created by rajeshbabuk on 6/7/16.
  */
 @ApiModel(value="SearchRecordsRequest", description="Model for showing user details")
-public class SearchRecordsRequest implements Serializable {
+public class SearchRecordsRequest  implements Serializable {
 
 
     @ApiModelProperty(name= "fieldValue", value= "Search Value",  position = 0)
@@ -54,6 +54,9 @@ public class SearchRecordsRequest implements Serializable {
     @ApiModelProperty(name= "pageSize", value= "Total records to show is page", position = 12)
     private Integer pageSize = 10;
 
+    @ApiModelProperty(required = false,hidden = true)
+    private boolean barcodeSearch = false;
+
     /**
      * Instantiates a new Search records request.
      */
@@ -89,6 +92,7 @@ public class SearchRecordsRequest implements Serializable {
 
         this.setPageNumber(0);
         this.setPageSize(10);
+        this.setBarcodeSearch(false);
     }
 
 
@@ -320,7 +324,7 @@ public class SearchRecordsRequest implements Serializable {
 
     /**
      * set the storage Locations
-     * @param storageLocations
+     * @param imsDepositoryCodes
      */
     public void setImsDepositoryCodes(List<String> imsDepositoryCodes) {
         this.imsDepositoryCodes = imsDepositoryCodes;
@@ -335,5 +339,13 @@ public class SearchRecordsRequest implements Serializable {
 
     public void setTitleMatch(List<String> titleMatch) {
         this.titleMatch = titleMatch;
+    }
+
+    public boolean isBarcodeSearch() {
+        return barcodeSearch;
+    }
+
+    public void setBarcodeSearch(boolean barcodeSearch) {
+        this.barcodeSearch = barcodeSearch;
     }
 }
