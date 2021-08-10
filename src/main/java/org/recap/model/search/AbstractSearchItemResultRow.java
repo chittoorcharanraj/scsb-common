@@ -28,5 +28,8 @@ public class AbstractSearchItemResultRow {
     private String imsLocation;
     @ApiModelProperty(name= "selectedItem", value= "selected Item",position = 8)
     private boolean selectedItem = false;
+
+    @ApiModelProperty(hidden = true)
+    private boolean itemMatched = false;
 }
 
