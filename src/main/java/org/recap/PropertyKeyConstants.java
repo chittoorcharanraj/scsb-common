@@ -177,6 +177,8 @@ public class PropertyKeyConstants {
     public static final String SUBMIT_COLLECTION_SOLR_PARTIAL_INDEX_THREAD_SIZE = "submit.collection.solr.partial.index.thread.size";
     public static final String SUBMIT_COLLECTION_SOLR_PARTIAL_INDEX_DOCS_SIZE = "submit.collection.solr.partial.index.docs.size";
     public static final String SUBMIT_COLLECTION_USE_SOLR_PARTIAL_INDEX_TOTAL_DOCS_SIZE = "submit.collection.use.solr.partial.index.docs.size";
+    public static final String UI_SUPPRESS_DELIVERY_LOCATION = "ui.suppress.delivery.location";
+
 
     /* ILS Property Keys */
     public static class ILS {
