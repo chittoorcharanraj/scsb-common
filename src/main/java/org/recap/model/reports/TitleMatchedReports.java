@@ -17,6 +17,7 @@ public class TitleMatchedReports {
     private String itemBarcode;
     private List<String> itemBarcodes;
     private String lccn;
+    private String cgd;
     private String duplicateCode;
     private Date createdDate;
 }
