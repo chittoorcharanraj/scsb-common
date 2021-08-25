@@ -57,6 +57,12 @@ public class BibliographicAbstractEntity extends AbstractEntity<Integer> impleme
     @Column(name = "MATCHING_IDENTITY")
     private String matchingIdentity;
 
+    @Column(name="match_score")
+    private Integer matchScore;
+
+    @Column(name="anamoly_flag")
+    private Boolean anamolyFlag;
+
     public byte[] getContent() {
         return content;
     }
