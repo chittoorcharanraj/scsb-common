@@ -14,10 +14,17 @@ import java.util.List;
 public class TitleMatchedReports {
     private String bibId;
     private Integer scsbId;
-    private String itemBarcode;
-    private List<String> itemBarcodes;
+    private List<ItemDetails> itemDetails;
     private String lccn;
-    private String cgd;
+    private String isbn;
+    private String oclc;
+    private String issn;
+    private String title;
     private String duplicateCode;
-    private Date createdDate;
+    private String anomalyFlag;
+    private String mScore;
+    private String mScoreTranslated;
+    private Boolean expanded = false;
+    private String itemBarcode;
+    private String cgd;
 }
