@@ -165,6 +165,7 @@ public class PropertyKeyConstants {
     public static final String STATUS_RECONCILIATION_BATCH_SIZE = "status.reconciliation.batch.size";
     public static final String STATUS_RECONCILIATION_DAY_LIMIT = "status.reconciliation.day.limit";
     public static final String STATUS_RECONCILIATION_BARCODE_LIMIT = "status.reconciliation.barcode.limit";
+    public static final String STATUS_RECONCILIATION_REFILE_MAX_CAP_LIMIT = "status.reconciliation.refile.max.cap.limit";
     public static final String PURGE_EMAIL_ADDRESS_EDD_REQUEST_DAY_LIMIT = "purge.email.address.edd.request.day.limit";
     public static final String PURGE_EMAIL_ADDRESS_PHYSICAL_REQUEST_DAY_LIMIT = "purge.email.address.physical.request.day.limit";
     public static final String PURGE_EXCEPTION_REQUEST_DAY_LIMIT = "purge.exception.request.day.limit";
@@ -309,5 +310,6 @@ public class PropertyKeyConstants {
         public static final String IMS_POLLING_TIME_INTERVAL = "ims.polling.time.interval";
         public static final String IMS_AVAILABLE_ITEM_STATUS_CODES = "ims.available.item.status.codes";
         public static final String IMS_NOT_AVAILABLE_ITEM_STATUS_CODES = "ims.not.available.item.status.codes";
+        public static final String IMS_REQUESTABLE_NOT_RETRIEVABLE_ITEM_STATUS_CODES = "ims.requestable.not.retrievable.item.status.codes";
     }
 }
