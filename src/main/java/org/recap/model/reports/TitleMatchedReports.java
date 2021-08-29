@@ -3,7 +3,7 @@ package org.recap.model.reports;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Date;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,7 +14,7 @@ import java.util.List;
 public class TitleMatchedReports {
     private String bibId;
     private Integer scsbId;
-    private List<ItemDetails> itemDetails;
+    private List<ItemDetails> itemDetails = new ArrayList<>();
     private String lccn;
     private String isbn;
     private String oclc;
