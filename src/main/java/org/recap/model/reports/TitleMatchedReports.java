@@ -21,9 +21,9 @@ public class TitleMatchedReports {
     private String issn;
     private String title;
     private String duplicateCode;
-    private String anomalyFlag;
-    private String mScore;
-    private String mScoreTranslated;
+    private String anamolyFlag;
+    private String matchScore;
+    private String matchScoreTranslated;
     private Boolean expanded = false;
     private String itemBarcode;
     private String cgd;
