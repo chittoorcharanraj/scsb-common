@@ -180,7 +180,7 @@ public class PropertyKeyConstants {
     public static final String SUBMIT_COLLECTION_USE_SOLR_PARTIAL_INDEX_TOTAL_DOCS_SIZE = "submit.collection.use.solr.partial.index.docs.size";
     public static final String UI_SUPPRESS_DELIVERY_LOCATION = "ui.suppress.delivery.location";
 
-    public static final String IS_INDEX_GROUPING_MATCHES="index.grouping";
+    public static final String IS_INDEX_GROUPING_MATCHES="index.grouping.for.ma";
 
 
     /* ILS Property Keys */
