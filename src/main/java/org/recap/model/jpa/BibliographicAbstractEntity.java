@@ -63,14 +63,6 @@ public class BibliographicAbstractEntity extends AbstractEntity<Integer> impleme
     @Column(name="ANAMOLY_FLAG")
     private Boolean anamolyFlag;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "MI_CREATED_DATE")
-    private Date miCreatedDate;
-
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "MI_UPDATED_DATE")
-    private Date miUpdatedDate;
-
     @Column(name="MA_QUALIFIER")
     private Boolean maQualifier;
 
