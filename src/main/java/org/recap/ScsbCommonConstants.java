@@ -291,5 +291,5 @@ public class ScsbCommonConstants {
     public static final String ROLE_SUPER_ADMIN = "Super Admin";
     public static final String ROLE_RECAP = "Repository";
 
-    public static final String SC_MATCH_POINT_CHANGE_REPORT = "sc_match_point_change";
+    public static final String SC_MATCH_POINT_CHANGE_REPORT = "Submit_Collection_Match_Point_Changed_Report";
 }
