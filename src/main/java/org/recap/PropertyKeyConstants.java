@@ -313,5 +313,6 @@ public class PropertyKeyConstants {
         public static final String IMS_AVAILABLE_ITEM_STATUS_CODES = "ims.available.item.status.codes";
         public static final String IMS_NOT_AVAILABLE_ITEM_STATUS_CODES = "ims.not.available.item.status.codes";
         public static final String IMS_REQUESTABLE_NOT_RETRIEVABLE_ITEM_STATUS_CODES = "ims.requestable.not.retrievable.item.status.codes";
+        public static final String IMS_NOT_ON_FILE_ITEM_STATUS_CODES = "ims.not.on.file.item.status.codes";
     }
 }
