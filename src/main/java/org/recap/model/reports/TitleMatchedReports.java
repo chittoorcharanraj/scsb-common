@@ -27,4 +27,8 @@ public class TitleMatchedReports {
     private Boolean expanded = false;
     private String itemBarcode;
     private String cgd;
+    private String publisher;
+    private String publicationDate;
+    private String owningInstitution;
+    private Integer id;
 }
