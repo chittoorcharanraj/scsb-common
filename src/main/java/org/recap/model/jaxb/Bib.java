@@ -31,8 +31,8 @@ public class Bib implements Serializable {
     private String matchingIdentity;
     @XmlElement(name = "matchScore")
     private String matchScore;
-    @XmlElement(name = "anamolyFlag")
-    private String anamolyFlag;
+    @XmlElement(name = "anomalyFlag")
+    private String anomalyFlag;
 
 
     /**
@@ -134,21 +134,21 @@ public class Bib implements Serializable {
     }
 
     /**
-     * Gets anamolyFlag.
+     * Gets anomalyFlag.
      *
-     * @return the anamolyFlag
+     * @return the anomalyFlag
      */
-    public String getAnamolyFlag() {
-        return anamolyFlag;
+    public String getAnomalyFlag() {
+        return anomalyFlag;
     }
 
     /**
-     * Sets anamolyFlag.
+     * Sets anomalyFlag.
      *
-     * @param anamolyFlag the content
+     * @param anomalyFlag the content
      */
-    public void setAnamolyFlag(String anamolyFlag) {
-        this.anamolyFlag = anamolyFlag;
+    public void setAnomalyFlag(String anomalyFlag) {
+        this.anomalyFlag = anomalyFlag;
     }
 
 }
