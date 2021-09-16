@@ -187,7 +187,6 @@ public class ScsbCommonConstants {
     public static final String SUBMIT_COLLECTION_EXCEPTION_REPORT = "Submit_Collection_Exception_Report";
     public static final String SUBMIT_COLLECTION_SUCCESS_REPORT = "Submit_Collection_Success_Report";
     public static final String SUBMIT_COLLECTION_FAILURE_REPORT = "Submit_Collection_Failure_Report";
-    public static final String SUBMIT_COLLECTION_MA_QUALIFIED_REPORT = "Submit_Collection_MA_Qualified_Report";
     public static final String FAIL = "Fail";
     public static final String SUBMIT_COLLECTION_ITEM_BARCODE= "ItemBarcode";
     public static final String SUBMIT_COLLECTION_CUSTOMER_CODE= "CustomerCode";
