@@ -182,6 +182,11 @@ public class PropertyKeyConstants {
 
     public static final String IS_INDEX_GROUPING_MATCHES="index.grouping.for.ma";
 
+    public static final String TITLE_MATCH_REPORT_DIR="title.match.report.directory";
+
+    public static final String TITLE_MATCH_REPORT_EXPORT_LIMIT = "title.match.export.limit";
+    public static final String TITLE_REPORT_LIMIT_BIBS_PER_FILE = "title.match.bibs.limit.per.file";
+
 
     /* ILS Property Keys */
     public static class ILS {
