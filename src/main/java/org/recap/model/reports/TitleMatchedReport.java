@@ -23,9 +23,9 @@ public class TitleMatchedReport {
     private Integer pageSize = 100;
     private Integer totalPageCount = 0;
     private String message;
-    private List<String> owningInst;
+    private String owningInst;
     private List<String> cgd;
-    private List<String> titleMatch;
+    private String titleMatch;
     private Date fromDate;
     private Date toDate;
     private List<TitleMatchedReports> titleMatchedReports = new ArrayList<>();
