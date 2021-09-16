@@ -27,14 +27,6 @@ public class Bib implements Serializable {
     @XmlElement
     protected List<MatchingInstitutionBibIdType> matchingInstitutionBibId;
 
-    @XmlElement(name = "matchingIdentity")
-    private String matchingIdentity;
-    @XmlElement(name = "matchScore")
-    private String matchScore;
-    @XmlElement(name = "anomalyFlag")
-    private String anomalyFlag;
-
-
     /**
      * Gets owning institution bib id.
      *
@@ -96,59 +88,4 @@ public class Bib implements Serializable {
     public void setMatchingInstitutionBibId(List<MatchingInstitutionBibIdType> matchingInstitutionBibId) {
         this.matchingInstitutionBibId = matchingInstitutionBibId;
     }
-
-    /**
-     * Gets matching Identity
-     *
-     * @return the matching Identity
-     */
-    public String getMatchingIdentity() {
-        return matchingIdentity;
-    }
-
-    /**
-     * Sets matching Identity.
-     *
-     * @param matchingIdentity the matchingIdentity
-     */
-    public void setMatchingIdentity(String matchingIdentity) {
-        this.matchingIdentity = matchingIdentity;
-    }
-
-    /**
-     * Gets match Score
-     *
-     * @return the match Score
-     */
-    public String getMatchScore() {
-        return matchScore;
-    }
-
-    /**
-     * Sets match Score.
-     *
-     * @param matchScore
-     */
-    public void setMatchScore(String matchScore) {
-        this.matchScore = matchScore;
-    }
-
-    /**
-     * Gets anomalyFlag.
-     *
-     * @return the anomalyFlag
-     */
-    public String getAnomalyFlag() {
-        return anomalyFlag;
-    }
-
-    /**
-     * Sets anomalyFlag.
-     *
-     * @param anomalyFlag the content
-     */
-    public void setAnomalyFlag(String anomalyFlag) {
-        this.anomalyFlag = anomalyFlag;
-    }
-
 }
