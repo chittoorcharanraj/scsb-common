@@ -8,4 +8,5 @@ import lombok.Setter;
 public class ItemDetails {
     private String itemBarcode;
     private String cgd;
+    private String chronologyAndEnum;
 }
