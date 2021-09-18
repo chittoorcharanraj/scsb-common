@@ -64,7 +64,7 @@ public class BibliographicAbstractEntity extends AbstractEntity<Integer> impleme
     private Boolean anamolyFlag;
 
     @Column(name="MA_QUALIFIER")
-    private Boolean maQualifier;
+    private Integer maQualifier;
 
     public byte[] getContent() {
         return content;
