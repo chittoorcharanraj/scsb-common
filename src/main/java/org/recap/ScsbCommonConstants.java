@@ -290,4 +290,8 @@ public class ScsbCommonConstants {
     //permissions
     public static final String ROLE_SUPER_ADMIN = "Super Admin";
     public static final String ROLE_RECAP = "Repository";
+
+    public static final Integer MA_QUALIFIER_1 = 1;
+    public static final Integer MA_QUALIFIER_2 = 2;
+    public static final Integer MA_QUALIFIER_3 = 3;
 }
