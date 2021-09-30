@@ -1,5 +1,6 @@
 package org.recap.model.reports;
 
+import io.swagger.models.auth.In;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -30,4 +31,6 @@ public class TitleMatchedReport {
     private Date toDate;
     private List<TitleMatchedReports> titleMatchedReports = new ArrayList<>();
     private List<TitleMatchCount> titleMatchCounts = new ArrayList<>();
+    private Integer exportLimit;
+    private String  reportMessage;
 }
