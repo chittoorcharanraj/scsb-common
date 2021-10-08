@@ -24,7 +24,7 @@ public class SearchRecordsRequest  implements Serializable {
     @ApiModelProperty(name= "owningInstitutions", value= "Publications Owning Instutions", position = 2)
     private List<String> owningInstitutions = null;
 
-    @ApiModelProperty(name= "collectionGroupDesignations", value= "Collection Group Designations",position = 3, allowableValues="Shared, Open, Private")
+    @ApiModelProperty(name= "collectionGroupDesignations", value= "Collection Group Designations",position = 3, allowableValues="Shared, Open, Private, Committed, Uncommittable")
     private List<String> collectionGroupDesignations = null;
 
     @ApiModelProperty(name= "availability", value= "Availability of books in Storage Locations",position = 4, allowableValues = "Available, NotAvailable")
@@ -78,6 +78,8 @@ public class SearchRecordsRequest  implements Serializable {
         this.getCollectionGroupDesignations().add("Shared");
         this.getCollectionGroupDesignations().add("Private");
         this.getCollectionGroupDesignations().add("Open");
+        this.getCollectionGroupDesignations().add("Committed");
+        this.getCollectionGroupDesignations().add("Uncommittable");
 
         this.getAvailability().add("Available");
         this.getAvailability().add("NotAvailable");
@@ -89,6 +91,9 @@ public class SearchRecordsRequest  implements Serializable {
         this.getUseRestrictions().add("NoRestrictions");
         this.getUseRestrictions().add("InLibraryUse");
         this.getUseRestrictions().add("SupervisedUse");
+
+        this.getTitleMatch().add("Matched");
+        this.getTitleMatch().add("Not Matched");
 
         this.setPageNumber(0);
         this.setPageSize(10);
