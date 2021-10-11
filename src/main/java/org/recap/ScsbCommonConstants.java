@@ -98,6 +98,7 @@ public class ScsbCommonConstants {
     public static final String MATCH_POINT_FIELD_ISBN = "ISBN";
     public static final String MATCH_POINT_FIELD_ISSN = "ISSN";
     public static final String MATCH_POINT_FIELD_LCCN = "LCCN";
+    public static final String MATCH_POINT_FIELD_TITLE = "Title_match";
     public static final String ALL_INST = "ALL";
     public static final String OCLC_TAG = "035";
     public static final String ISBN_TAG = "020";
