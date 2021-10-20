@@ -37,4 +37,8 @@ public class SolrIndexRequest {
     private String endRequestId;
     private String fromDate;
     private String matchBy;
+
+    private String maProcessType;
+    private boolean includeMaQualifier;
+    private boolean indexBibsForOngoingMa;
 }
