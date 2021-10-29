@@ -188,6 +188,8 @@ public class PropertyKeyConstants {
     public static final String TITLE_REPORT_LIMIT_BIBS_PER_FILE = "title.match.bibs.limit.per.file";
     public static final String TITLE_REPORT_STATUS_FILE = "title.match.report.status.file.name";
 
+    public static final String RUN_ONGOING_MA_GROUPING_PROCESS = "run.ongoing.ma.grouping.process";
+
     /* ILS Property Keys */
     public static class ILS {
         private ILS() {
