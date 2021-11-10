@@ -1,6 +1,6 @@
 ## Phase4-SCSB-Common
 
-   
+   The SCSB-Common Project has all the common code that will be used across other SCSB Application. 
 
 ## Software Required
 
@@ -11,7 +11,7 @@
 
 - Download the Project , navigate inside project folder and build the project using below command
 
--${VersionNumber} - Current Version of Common Jar i.e. 1.6
+-${VersionNumber} - Current Version of Common Jar i.e. 1.9
 
 ./gradlew clean build -x test -DarchiveVersion=${VersionNumber} 
 
