@@ -1,6 +1,6 @@
 ## Phase4-SCSB-Common
 
-   The SCSB-Common Project has all the common code that will be used across other SCSB Application. 
+               The SCSB-Common Project has all the common code that will be used across other SCSB Application. 
 
 ## Software Required
 
