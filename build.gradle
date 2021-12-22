@@ -115,6 +115,6 @@ task scsbCommonJavadocs(type: Javadoc) {
 
 }
 jar {
-    enabled = false
+    enabled = true
     archiveClassifier = '' //use empty string
 }
