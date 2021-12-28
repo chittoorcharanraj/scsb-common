@@ -291,6 +291,7 @@ public class PropertyKeyConstants {
         public static final String LAS_EXCEPTION_EMAIL_ONLY = "las.exception.email.only";
         public static final String ILS_RESTRICTED_ACCEPT_ITEM_AGENCY_ID = "ils.restricted.accept.item.agency.id";
         public static final String ILS_UNRESTRICTED_ACCEPT_ITEM_AGENCY_ID = "ils.unrestricted.accept.item.agency.id";
+        public static final String ILS_ITEM_LIBRARY_REQUIRED = "ils.item.library.required";
     }
 
     /* IMS Property Keys */
