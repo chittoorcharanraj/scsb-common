@@ -1,7 +1,8 @@
 package org.recap.model.jpa;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
@@ -17,8 +18,8 @@ import java.util.Date;
 @Entity
 @Table(name = "ITEM_CHANGE_LOG_T", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "ITEM_CHANGE_LOG_ID"))
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class ItemChangeLogEntity extends AbstractEntity<Integer> {
 
     @Column(name = "UPDATED_BY")

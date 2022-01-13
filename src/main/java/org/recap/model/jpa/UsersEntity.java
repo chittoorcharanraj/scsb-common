@@ -1,7 +1,8 @@
 package org.recap.model.jpa;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
@@ -22,11 +23,11 @@ import java.util.List;
 /**
  * Created by dharmendrag on 29/11/16.
  */
+@Data
+@EqualsAndHashCode(callSuper=false)
 @Entity
 @Table(name="user_t",schema="recap",catalog="")
 @AttributeOverride(name = "id", column = @Column(name = "user_id"))
-@Getter
-@Setter
 public class UsersEntity extends AbstractEntity<Integer>{
 
     @Column(name="login_id")

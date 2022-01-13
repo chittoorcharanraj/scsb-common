@@ -1,8 +1,7 @@
 package org.recap.model.jpa;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -10,8 +9,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "OWNER_CODES_T", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "OWNER_CODE_ID"))
-@Getter
-@Setter
+@Data
 public class OwnerCodeEntity extends AbstractEntity<Integer> {
 
     @Column(name = "OWNER_CODE")

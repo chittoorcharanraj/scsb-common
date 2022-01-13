@@ -1,7 +1,8 @@
 package org.recap.model.jpa;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
@@ -14,8 +15,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "request_type_t", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "REQUEST_TYPE_ID"))
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class RequestTypeEntity extends AbstractEntity<Integer> {
 
     @Column(name = "REQUEST_TYPE_CODE")

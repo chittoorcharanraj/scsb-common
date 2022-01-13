@@ -1,8 +1,8 @@
 package org.recap.model.jpa;
 
+import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
@@ -15,8 +15,7 @@ import java.util.Date;
  * Created by sureshss on 02/20/20.
  */
 
-@Getter
-@Setter
+@Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true, callSuper = false)
 @MappedSuperclass
 public class ItemAbstractEntity extends AbstractEntity<Integer>  implements Serializable {

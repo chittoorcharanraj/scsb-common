@@ -1,16 +1,15 @@
 package org.recap.model.jpa;
 
+import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "ims_location_t", catalog = "")
-@Getter
-@Setter
+@Data
 @EqualsAndHashCode(callSuper = false)
 @AttributeOverride(name = "id", column = @Column(name = "IMS_LOCATION_ID"))
 public class ImsLocationEntity extends AbstractEntity<Integer> {

@@ -1,7 +1,7 @@
 package org.recap.model.jpa;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -14,8 +14,8 @@ import java.util.List;
 @Entity
 @Table(name = "MA_REPORT_T", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "RECORD_NUM"))
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class MatchingAlgorithmReportEntity extends AbstractEntity<Integer> {
 
     @Column(name = "FILE_NAME")

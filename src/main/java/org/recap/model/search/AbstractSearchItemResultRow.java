@@ -1,14 +1,13 @@
 package org.recap.model.search;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 /**
  * Created by rajesh on 18-Jul-16.
  */
-@Getter
-@Setter
+@Data
 public class AbstractSearchItemResultRow {
     @ApiModelProperty(name= "callNumber", value= "Call Number",position = 0)
     private String callNumber;

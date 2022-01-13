@@ -1,13 +1,12 @@
 package org.recap.model.search;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 /**
  * Created by akulak on 8/3/17.
  */
-@Getter
-@Setter
+@Data
 public class IncompleteReportResultsRow {
     private String author;
     private String createdDate;

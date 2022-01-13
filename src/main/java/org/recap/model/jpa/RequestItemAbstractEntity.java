@@ -1,7 +1,8 @@
 package org.recap.model.jpa;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -15,8 +16,8 @@ import java.util.Date;
 /**
  * Created by pvsubrah on 6/11/16.
  */
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper=false)
 @MappedSuperclass
 public class RequestItemAbstractEntity extends AbstractEntity<Integer> {
 

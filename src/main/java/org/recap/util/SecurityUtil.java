@@ -1,8 +1,8 @@
 package org.recap.util;
 
+import lombok.extern.slf4j.Slf4j;
 import org.recap.ScsbCommonConstants;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -19,13 +19,14 @@ import java.util.Base64;
 /**
  * Created by premkb on 15/9/17.
  */
+@Slf4j
 @Service
 public class SecurityUtil {
 
     @Value("${scsb.encryption.secretkey}")
     private String encryptionSecretKey;
 
-    private static final Logger logger = LoggerFactory.getLogger(SecurityUtil.class);
+
 
     public String getEncryptedValue(String inputValue){
         Key aesKey = new SecretKeySpec(encryptionSecretKey.getBytes(), "AES");
@@ -38,9 +39,9 @@ public class SecurityUtil {
             encryptedString = encoder.encodeToString(encrypted);
         } catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException |
                 IllegalBlockSizeException | BadPaddingException e) {
-            logger.error(ScsbCommonConstants.LOG_ERROR,e);
+            log.error(ScsbCommonConstants.LOG_ERROR,e);
         }
-        logger.debug("encryptedString--->{}",encryptedString);
+        log.debug("encryptedString--->{}",encryptedString);
         return encryptedString;
     }
 
@@ -57,9 +58,9 @@ public class SecurityUtil {
             decrypted = new String(cipher.doFinal(decoder.decode(encryptedValue)));
         } catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException |
                 IllegalBlockSizeException | BadPaddingException e) {
-            logger.error(ScsbCommonConstants.LOG_ERROR,e);
+            log.error(ScsbCommonConstants.LOG_ERROR,e);
         }
-        logger.debug("decryptedString--->{}",decrypted);
+        log.debug("decryptedString--->{}",decrypted);
         return decrypted;
     }
 }

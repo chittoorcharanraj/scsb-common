@@ -1,14 +1,13 @@
 package org.recap.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 /**
  * Created by rajeshbabuk on 11/10/17.
  */
 
-@Getter
-@Setter
+@Data
 public class BulkRequestInformation {
     private String requestingInstitution;
     private String patronBarcode;

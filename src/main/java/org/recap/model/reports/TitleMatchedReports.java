@@ -1,7 +1,6 @@
 package org.recap.model.reports;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,8 +8,7 @@ import java.util.List;
 /**
  * @author dinakar on 08/07/21
  */
-@Setter
-@Getter
+@Data
 public class TitleMatchedReports {
     private String bibId;
     private Integer scsbId;

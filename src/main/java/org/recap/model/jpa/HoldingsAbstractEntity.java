@@ -1,8 +1,7 @@
 package org.recap.model.jpa;
 
+import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
@@ -17,8 +16,7 @@ import java.util.Date;
  * Created by sureshss on 02/20/20.
  */
 @EqualsAndHashCode(onlyExplicitlyIncluded = true, callSuper = false)
-@Getter
-@Setter
+@Data
 @MappedSuperclass
 public class HoldingsAbstractEntity extends AbstractEntity<Integer>  implements Serializable {
 

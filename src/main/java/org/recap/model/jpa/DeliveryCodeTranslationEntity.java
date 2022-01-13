@@ -1,7 +1,6 @@
 package org.recap.model.jpa;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -9,8 +8,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "DELIVERY_CODE_TRANSLATION_T", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "DEL_CODE_TRANS_ID"))
-@Getter
-@Setter
+@Data
 public class DeliveryCodeTranslationEntity extends AbstractEntity<Integer> implements Comparable<DeliveryCodeTranslationEntity> {
 
     @Column(name = "REQUESTING_INST_ID")

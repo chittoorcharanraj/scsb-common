@@ -1,5 +1,7 @@
 package org.recap.model.jpa;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,8 +19,8 @@ import java.util.Date;
 @Entity
 @Table(name = "deaccession_item_change_log_t", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "CHANGE_LOG_ID"))
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class DeaccessionItemChangeLog extends AbstractEntity<Integer>  {
     @Column(name = "UPDATED_BY")
     private String updatedBy;
