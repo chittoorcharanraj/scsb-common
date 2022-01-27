@@ -1,14 +1,13 @@
 package org.recap.model.search;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 
 /**
  * Created by rajeshbabuk on 2/1/17.
  */
-@Getter
-@Setter
+@Data
 public class SearchRecordsCommonResponse {
     private Integer pageNumber;
     private Integer totalPageCount = 0;

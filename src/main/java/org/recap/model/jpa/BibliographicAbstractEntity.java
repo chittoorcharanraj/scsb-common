@@ -1,8 +1,7 @@
 package org.recap.model.jpa;
 
+import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Lob;
@@ -17,8 +16,7 @@ import java.util.Date;
  */
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true, callSuper = false)
-@Getter
-@Setter
+@Data
 @MappedSuperclass
 public class BibliographicAbstractEntity extends AbstractEntity<Integer> implements Serializable {
     

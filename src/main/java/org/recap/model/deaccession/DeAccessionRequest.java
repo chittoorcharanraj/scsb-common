@@ -1,7 +1,6 @@
 package org.recap.model.deaccession;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,8 +8,7 @@ import java.util.List;
 /**
  * Created by chenchulakshmig on 11/10/16.
  */
-@Getter
-@Setter
+@Data
 public class DeAccessionRequest {
 
     private List<DeAccessionItem> deAccessionItems = new ArrayList<>();

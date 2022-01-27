@@ -1,7 +1,8 @@
 package org.recap.model.jpa;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
@@ -21,8 +22,8 @@ import java.util.Set;
 @Entity
 @Table(name="roles_t",schema="recap",catalog="")
 @AttributeOverride(name = "id", column = @Column(name = "role_id"))
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class RoleEntity extends AbstractEntity<Integer>{
 
     @Column(name="role_name")

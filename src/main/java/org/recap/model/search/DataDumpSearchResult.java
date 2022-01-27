@@ -2,8 +2,8 @@ package org.recap.model.search;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +12,7 @@ import java.util.List;
  * Created by angelind on 26/10/16.
  */
 @ApiModel(value="DataDumpSearchResult", description="Model for Displaying Search Result")
-@Getter
-@Setter
+@Data
 public class DataDumpSearchResult {
     @ApiModelProperty(name= "bibId", value= "Bibliographic Id",position = 0)
     private Integer bibId;

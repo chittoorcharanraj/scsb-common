@@ -1,7 +1,8 @@
 package org.recap.model.jpa;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 
 import javax.persistence.*;
 import java.util.Date;
@@ -12,8 +13,8 @@ import java.util.Date;
 @Entity
 @Table(name = "scsb_properties_t", catalog = "")
 @AttributeOverride(name = "id", column = @Column(name = "PROPERTIES_ID"))
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class SCSBProprtiesEntity extends AbstractEntity<Integer> {
 
     @Column(name = "P_KEY")

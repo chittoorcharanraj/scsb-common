@@ -1,15 +1,14 @@
 package org.recap.model.search;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 
 /**
  * Created by rajeshbabuk on 11/7/16.
  */
-@Getter
-@Setter
+@Data
 public class AbstractSearchResultRow {
     @ApiModelProperty(name= "bibId", value= "Bibliographic Id",position = 0)
     private Integer bibId;

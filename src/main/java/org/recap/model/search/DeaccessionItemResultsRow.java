@@ -1,13 +1,12 @@
 package org.recap.model.search;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 /**
  * Created by akulak on 23/12/16.
  */
-@Setter
-@Getter
+@Data
 public class DeaccessionItemResultsRow {
 
     private Integer itemId;

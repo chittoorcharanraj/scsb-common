@@ -1,12 +1,10 @@
 package org.recap.model.submitCollection;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.Date;
 
-@Getter
-@Setter
+@Data
 public class SubmitCollectionResultsRow {
     private String itemBarcode;
     private String customerCode;

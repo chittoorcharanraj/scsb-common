@@ -1,11 +1,10 @@
 package org.recap.model.reports;
 
-import io.swagger.models.auth.In;
+;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
+
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -14,8 +13,7 @@ import java.util.List;
 /**
  * @author dinakar on 08/07/21
  */
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class TitleMatchedReport {

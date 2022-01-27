@@ -1,8 +1,9 @@
 package org.recap.model.jpa;
 
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
@@ -19,8 +20,8 @@ import java.util.List;
 @Entity
 @Table(name="permissions_t",schema="recap",catalog="")
 @AttributeOverride(name = "id", column = @Column(name = "permission_id"))
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class PermissionEntity extends AbstractEntity<Integer> {
     @Column(name="permission_name")
     private String permissionName;

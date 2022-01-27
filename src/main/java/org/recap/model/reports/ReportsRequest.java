@@ -1,7 +1,7 @@
 package org.recap.model.reports;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,8 +9,8 @@ import java.util.List;
 /**
  * Created by rajeshbabuk on 13/1/17.
  */
-@Getter
-@Setter
+
+@Data
 public class ReportsRequest {
 
     private String accessionDeaccessionFromDate;

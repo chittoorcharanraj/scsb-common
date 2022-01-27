@@ -1,10 +1,9 @@
 package org.recap.model.reports;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Setter
-@Getter
+
+@Data
 public class TitleMatchCount {
     private String owningInst;
     private String cgd;

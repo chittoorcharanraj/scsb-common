@@ -1,7 +1,7 @@
 package org.recap.model.jpa;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
@@ -14,8 +14,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "JOB_PARAM_DATA_T")
 @AttributeOverride(name = "id", column = @Column(name = "JOB_PARAM_DATA_ID"))
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class JobParamDataEntity extends AbstractEntity<Integer> {
 
     @Column(name = "PARAM_NAME")

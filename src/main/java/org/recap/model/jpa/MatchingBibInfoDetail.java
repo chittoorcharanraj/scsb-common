@@ -1,7 +1,8 @@
 package org.recap.model.jpa;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
@@ -14,8 +15,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name="MATCHING_BIB_INFO_DETAIL_T",schema="recap",catalog="")
 @AttributeOverride(name = "id", column = @Column(name = "MATCHING_BIB_INFO_DATA_DUMP_ID"))
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class MatchingBibInfoDetail extends AbstractEntity<Integer> {
     @Column(name = "BIB_ID")
     private String bibId;

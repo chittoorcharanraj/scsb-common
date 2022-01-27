@@ -1,13 +1,12 @@
 package org.recap.model.deaccession;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 /**
  * Created by rajeshbabuk on 21/2/17.
  */
-@Getter
-@Setter
+@Data
 public class DeAccessionItem {
 
     private String itemBarcode;
