@@ -1,7 +1,7 @@
 buildscript {
     ext {
-        springBootVersion = '2.5.8'
-        set('springCloudVersion', "2020.0.5")
+        springBootVersion = '2.6.2'
+        set('springCloudVersion', "2021.0.0")
     }
     repositories {
         mavenCentral()
@@ -12,7 +12,7 @@ buildscript {
 }
 
 plugins {
-    id 'org.springframework.boot' version '2.5.8'
+    id 'org.springframework.boot' version '2.6.2'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id "org.sonarqube" version "3.3"
 }
@@ -36,8 +36,8 @@ jar {
 group = 'org.recap'
 version = '2.1'
 
-sourceCompatibility = JavaVersion.VERSION_11
-targetCompatibility = JavaVersion.VERSION_11
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 repositories {
     mavenCentral()
