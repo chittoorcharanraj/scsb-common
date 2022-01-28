@@ -34,7 +34,7 @@ jar {
 }
 
 group = 'org.recap'
-version = '2.1'
+version = '2.2'
 
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
@@ -58,10 +58,10 @@ dependencies {
     implementation('org.apache.camel:camel-mail:3.14.0')
     implementation('org.apache.camel:camel-ftp:3.14.0')
     implementation('org.apache.camel:camel-zipfile:3.14.0')
-    implementation('org.apache.activemq:activemq-camel:5.15.15')
-    implementation('org.apache.activemq:activemq-pool:5.15.15')
-    implementation('org.apache.activemq:activemq-broker:5.15.15')
-    implementation('org.apache.activemq:activemq-client:5.15.15')
+    implementation('org.apache.activemq:activemq-camel:5.16.3')
+    implementation('org.apache.activemq:activemq-pool:5.16.3')
+    implementation('org.apache.activemq:activemq-broker:5.16.3')
+    implementation('org.apache.activemq:activemq-client:5.16.3')
     implementation('info.freelibrary:freelib-marc4j:2.6.12')
     implementation('org.apache.poi:poi:5.1.0')
     implementation('org.apache.poi:poi-ooxml:5.1.0')
