@@ -189,6 +189,7 @@ public class PropertyKeyConstants {
     public static final String TITLE_REPORT_STATUS_FILE = "title.match.report.status.file.name";
 
     public static final String RUN_ONGOING_MA_GROUPING_PROCESS = "run.ongoing.ma.grouping.process";
+    public static final String OCOLC_INSTITUTION = "ocolc.institution";
 
     /* ILS Property Keys */
     public static class ILS {
