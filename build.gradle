@@ -29,7 +29,7 @@ test {
 
 jar {
     enabled = true
-    archiveBaseName = 'phase4-scsb-common'
+    archiveBaseName = 'scsb-common'
     archiveVersion = System.properties["archiveVersion"]
 }
 
