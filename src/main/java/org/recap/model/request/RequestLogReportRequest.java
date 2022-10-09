@@ -15,8 +15,8 @@ public class RequestLogReportRequest {
     private Integer pageNumber = 0;
     private Integer pageSize = 10;
     private Integer totalPageCount = 0;
-    private Date fromDate;
-    private Date toDate;
+    private String fromDate;
+    private String toDate;
     private String institution;
     private String status;
     private Integer id;
