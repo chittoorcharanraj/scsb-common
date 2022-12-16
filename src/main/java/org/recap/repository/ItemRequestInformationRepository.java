@@ -28,8 +28,8 @@ public interface ItemRequestInformationRepository extends BaseRepository<ItemReq
     Page<ItemRequestReceivedInformationEntity> findByInstitutionAndStatus(Pageable pageable, @Param("requestInstitution") String requestInstitution, @Param("status") String status);
 
     @Modifying(clearAutomatically = true)
-    @Query(value = "update ItemRequestReceivedInformationEntity entity set entity.status = :status , entity.statusId = :statusId where entity.id = :id")
-    void update(@Param("id") Integer id, @Param("status") String status, @Param("statusId") Integer statusId);
+    @Query(value = "update ItemRequestReceivedInformationEntity entity set entity.status = :status , entity.statusId = :statusId, entity.date = :date where entity.id = :id")
+    void update(@Param("id") Integer id, @Param("status") String status, @Param("statusId") Integer statusId, @Param("date") Date date);
 
     @Query(value = "select requests from ItemRequestReceivedInformationEntity requests where requests.statusId = :statusId order by requests.date desc")
     Page<ItemRequestReceivedInformationEntity> findAllByStatusId(Pageable pageable, @Param("statusId") Integer statusId);
