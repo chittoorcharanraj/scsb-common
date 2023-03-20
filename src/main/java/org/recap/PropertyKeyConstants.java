@@ -10,6 +10,7 @@ public class PropertyKeyConstants {
 
     /* General Property Keys */
     public static final String VERSION_NUMBER = "version.number";
+    public static final String FOOTER_YEAR = "footer.year";
     public static final String SERVER_SECURE = "server.secure";
     public static final String SCSB_UI_URL = "scsb.ui.url";
     public static final String SOLR_URL = "solr.url";
