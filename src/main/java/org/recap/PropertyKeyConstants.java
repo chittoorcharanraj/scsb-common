@@ -157,6 +157,7 @@ public class PropertyKeyConstants {
     public static final String SUBMIT_COLLECTION_OWNINGINSTBIBIDLIST_PARTITION_SIZE = "submit.collection.owninginstbibidlist.partition.size";
     public static final String SUBMIT_COLLECTION_LOCAL_DIR = "submit.collection.local.dir";
     public static final String SUBMIT_COLLECTION_INPUT_LIMIT = "submit.collection.input.limit";
+    public static final String SUBMIT_COLLECTION_CGD_NO_PROTECTION_INPUT_LIMIT = "submit.collection.cgd.noprotection.input.limit";
     public static final String SUBMIT_COLLECTION_PARTITION_SIZE = "submit.collection.partition.size";
     public static final String NONHOLDINGID_INSTITUTION = "nonholdingid.institution";
     public static final String BIBDATA_API_CONNECTION_TIMEOUT = "bibdata.api.connection.timeout";
