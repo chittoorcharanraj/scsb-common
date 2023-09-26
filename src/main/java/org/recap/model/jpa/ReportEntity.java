@@ -33,7 +33,7 @@ public class ReportEntity extends AbstractEntity<Integer> {
     private String fileName;
 
     @Column(name = "TYPE")
-    private String reportType;
+    private String type;
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "CREATED_DATE")
