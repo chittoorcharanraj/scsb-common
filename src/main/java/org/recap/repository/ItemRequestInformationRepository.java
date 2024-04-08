@@ -65,10 +65,10 @@ public interface ItemRequestInformationRepository extends BaseRepository<ItemReq
     @Query(value = "select requests from ItemRequestReceivedInformationEntity requests "
             + " where (requests.requestInstitution = :requestInstitution or :requestInstitution is null or :requestInstitution = '') "
             + " and (requests.status = :status or  :status is null or :status = '') "
-            + " and (requests.date >= :fromDate or  :fromDate is null or :fromDate = '') "
-            + " and (requests.date <= :toDate or :toDate is null or :toDate = '') "
+            + " and (requests.date >= :fromDate or :fromDate is null  or (cast(:fromDate as text) = '' )) "
+            + " and (requests.date <= :toDate or :fromDate is null  or (cast(:toDate as text)  = '' )) "
             + " and (requests.validationStatus = :validationStatus or  :validationStatus is null or :validationStatus = '') "
             + " order by requests.date desc")
-    Page<ItemRequestReceivedInformationEntity> findByInstitutionAndStatusAndFromDateAndEndDateAndValidationStatus(Pageable pageable, @Param("requestInstitution") String institution,@Param("status") String status,@Param("fromDate") Date fromDate,@Param("toDate") Date toDate,@Param("validationStatus") String validationStatus);
+    Page<ItemRequestReceivedInformationEntity> findByInstitutionAndStatusAndFromDateAndEndDateAndValidationStatus(Pageable pageable, @Param("requestInstitution") String institution, @Param("status") String status, @Param("fromDate")   Date fromDate, @Param("toDate")   Date toDate, @Param("validationStatus") String validationStatus);
 
 }
