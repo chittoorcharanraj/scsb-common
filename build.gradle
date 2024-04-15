@@ -59,8 +59,8 @@ dependencies {
     implementation('org.apache.camel:camel-ftp:4.4.0')
     implementation('org.apache.camel:camel-zipfile:4.4.0')
     implementation('org.apache.activemq:activemq-camel:5.16.7')
-    implementation('org.apache.activemq:activemq-pool:6.0.1')
-    implementation('org.apache.activemq:activemq-broker:6.0.1')
+    implementation('org.apache.activemq:activemq-pool:5.18.3')
+    implementation('org.apache.activemq:activemq-broker:5.18.3')
     implementation('org.apache.poi:poi-ooxml:5.2.5')
     implementation('org.projectlombok:lombok:1.18.30')
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
