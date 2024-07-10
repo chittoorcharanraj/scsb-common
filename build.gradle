@@ -1,7 +1,7 @@
 buildscript {
     ext {
         springBootVersion = '3.3.0'
-        set('springCloudVersion', "2023.0.0")
+        set('springCloudVersion', "2023.0.2")
     }
     repositories {
         mavenCentral()
