@@ -99,7 +99,7 @@ jacocoTestReport {
         xml.required.set(true)
         csv.required.set(false)
         html.required.set(true)
-        html.outputLocation.dir("${layout.buildDirectory}/jacocoHtml")
+        html.outputLocation.set(layout.buildDirectory.dir("jacocoHtml"))
     }
 }
 
