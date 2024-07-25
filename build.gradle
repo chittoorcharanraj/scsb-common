@@ -36,17 +36,8 @@ jar {
 group = 'org.recap'
 version = '2.8'
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
-}
-tasks.withType(JavaCompile) {
-    options.release = 21
-}
-
+sourceCompatibility = JavaVersion.VERSION_21
+targetCompatibility = JavaVersion.VERSION_21
 
 repositories {
     mavenCentral()
@@ -105,10 +96,9 @@ jacocoTestReport {
         xml.required = true
         csv.required = false
         html.required = true
-        html.outputLocation.set(file("${buildDir}/jacocoHtml"))
+        html.destination file ("${buildDir}/jacocoHtml")
     }
 }
-
 
 task scsbCommonJavadocs(type: Javadoc) {
     source = sourceSets.main.java
