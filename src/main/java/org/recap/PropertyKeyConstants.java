@@ -296,6 +296,9 @@ public class PropertyKeyConstants {
         public static final String ILS_RESTRICTED_ACCEPT_ITEM_AGENCY_ID = "ils.restricted.accept.item.agency.id";
         public static final String ILS_UNRESTRICTED_ACCEPT_ITEM_AGENCY_ID = "ils.unrestricted.accept.item.agency.id";
         public static final String ILS_ITEM_LIBRARY_REQUIRED = "ils.item.library.required";
+        public static final String ILS_ALLOW_HOLD_ON_OWN_ITEM_REQUEST = "ils.allow.hold.on.own.item.request";
+        public static final String ILS_USE_API_KEY_FOR_AUTHENTICATION = "ils.use.api.key.for.authentication";
+
     }
 
     /* IMS Property Keys */

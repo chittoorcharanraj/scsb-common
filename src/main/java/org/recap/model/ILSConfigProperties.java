@@ -219,6 +219,10 @@ public class ILSConfigProperties {
     @Expose
     public String ilsApiKey;
 
+    @SerializedName(PropertyKeyConstants.ILS.ILS_USE_API_KEY_FOR_AUTHENTICATION)
+    @Expose
+    public String ilsUseApiKey;
+
     @SerializedName(PropertyKeyConstants.ILS.ILS_ENABLE_CIRCULATION_FREEZE)
     @Expose
     public String ilsEnableCirculationFreeze;
