@@ -298,6 +298,9 @@ public class PropertyKeyConstants {
         public static final String ILS_ITEM_LIBRARY_REQUIRED = "ils.item.library.required";
         public static final String ILS_ALLOW_HOLD_ON_OWN_ITEM_REQUEST = "ils.allow.hold.on.own.item.request";
         public static final String ILS_USE_API_KEY_FOR_AUTHENTICATION = "ils.use.api.key.for.authentication";
+        public static final String ILS_BIBDATA_API_SUPPORT_POST = "ils.bibdata.api.support.post";
+        public static final String ILS_BEARER_API_KEY = "ils.bearer.api.key";
+        public static final String ILS_BIB_DATA_API_UPDATE_ENDPOINT = "ils.bibdata.api.update.endpoint";
 
     }
 
