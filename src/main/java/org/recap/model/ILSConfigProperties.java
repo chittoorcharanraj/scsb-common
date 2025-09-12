@@ -231,4 +231,18 @@ public class ILSConfigProperties {
     @Expose
     public String ilsCirculationFreezeMessage;
 
+    @SerializedName(PropertyKeyConstants.ILS.ILS_BIBDATA_API_SUPPORT_POST)
+    @Expose
+    public String ilsBibdataApiSupportPost;
+
+    @SerializedName(PropertyKeyConstants.ILS.ILS_BEARER_API_KEY)
+    @Expose
+    public String ilsBearerApiKey;
+
+    @SerializedName(PropertyKeyConstants.ILS.ILS_BIB_DATA_API_UPDATE_ENDPOINT)
+    @Expose
+    public String ilsBibdataApiUpdateEndpoint;
+
+
+
 }
