@@ -73,7 +73,7 @@ dependencies {
     annotationProcessor('org.projectlombok:lombok:1.18.42')
     testImplementation('org.projectlombok:lombok:1.18.42')
     testAnnotationProcessor('org.projectlombok:lombok:1.18.42')
-    testImplementation("org.springframework.boot:spring-boot-starter-test:3.5.7")
+    testImplementation('org.springframework.boot:spring-boot-starter-test:3.5.7')
 
     implementation('com.mysql:mysql-connector-j:9.1.0')
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
